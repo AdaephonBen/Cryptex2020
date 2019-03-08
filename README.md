@@ -1,1 +1,0 @@
-Install go, gin, cd into directory and type go run main.go

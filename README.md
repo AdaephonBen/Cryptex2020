@@ -1,0 +1,1 @@
+Install go, cd into directory and type go run main.go

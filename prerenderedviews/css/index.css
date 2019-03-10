@@ -1,3 +1,53 @@
-.button {
-	background-color: green;
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {
+	background-color: #261D2B;
+	text-align: center;
+}
+.DiveInButton {
+	-webkit-transition-timing-function: ease-in;
+	     -o-transition-timing-function: ease-in;
+	        transition-timing-function: ease-in;
+	position: absolute;
+	top:45%;
+	left:42.5%;
+	right:42.5%;
+	bottom:45%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5vw;
+	border:3px solid #61A8D6;
+	color:#61A8D6;
+	background-color: #261D2B;
+	width: 15%;
+	height: 10%;
+	-webkit-transition: 1s all;
+	-o-transition: 1s all;
+	transition: 1s all;
+}
+.DiveInButton:hover {
+	border:3px solid #61A8D6;
+	background-color: #61A8D6;
+	color:#261D2B;
+}
+.DiveInButton div{
+	transform: scale(1);
+	transition: 1s transform;
+}
+.DiveInButton:hover div{
+	transform: scale(1.15);
+	transition: 1s transform;
+}
+.nav-links {
+	font-size: 1.5vw;
+	border:1px solid black;
+	display: inline-block;
+	width: 10%;
+	height: 4vh;
+}
+.nav-links a {
+	margin: auto;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.nav-links:hover {
+
 }

@@ -4,9 +4,10 @@ import { render } from "react-dom";
 import { BrowserRouter, Route } from 'react-router-dom'
 import {browserHistory} from 'react-router';
 import "./../css/index.css"
+
 import $ from 'jquery';
-import "bulma"
 import auth0 from 'auth0-js';
+
 const AUTH0_CLIENT_ID = "Y4lTZL7LZ05OnNglAcsmogfmTbDPDbDN";
 const AUTH0_DOMAIN = "cryptex.auth0.com";
 const AUTH0_CALLBACK_URL = location.href;
@@ -101,22 +102,16 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-8 col-xs-offset-2 jumbotron text-center">
-            <h1>Jokeish</h1>
-            <p>A load of Dad jokes XD</p>
-            <p>Sign in to get access </p>
-            <a
-              onClick={this.authenticate}
-              className="btn btn-primary btn-lg btn-login btn-block"
-            >
-              Sign In
-            </a>
-          </div>
-        </div>
-      </div>
-    );
+    	<div>
+    	<nav>
+    		<div className="nav-links"><a href="/rules/">Rules</a></div>
+    		<div className="nav-links"><a href="/crypt2019/">Cryptex 2019</a></div>
+    		<div className="nav-links"><a href="/sponsors">Sponsors</a></div>
+    		<div className="nav-links"><a href="/about/">About Us</a></div>
+    	</nav>
+    	<button className="DiveInButton" onClick={this.authenticate}><div className="transform">L O G I N</div></button>
+    	</div>
+    	);
   }
 }
 

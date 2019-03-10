@@ -41322,13 +41322,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":"../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"../node_modules/bulma/bulma.sass":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/auth0-js/dist/auth0.min.esm.js":[function(require,module,exports) {
+},{"process":"../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"../node_modules/auth0-js/dist/auth0.min.esm.js":[function(require,module,exports) {
 var global = arguments[3];
 
 "use strict";
@@ -45426,8 +45420,6 @@ require("./../css/index.css");
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
-require("bulma");
-
 var _auth0Js = _interopRequireDefault(require("auth0-js"));
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
@@ -45579,16 +45571,28 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", {
-        className: "container"
+      return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("div", {
+        className: "nav-links"
+      }, _react.default.createElement("a", {
+        href: "/rules/"
+      }, "Rules")), _react.default.createElement("div", {
+        className: "nav-links"
+      }, _react.default.createElement("a", {
+        href: "/crypt2019/"
+      }, "Cryptex 2019")), _react.default.createElement("div", {
+        className: "nav-links"
+      }, _react.default.createElement("a", {
+        href: "/sponsors"
+      }, "Sponsors")), _react.default.createElement("div", {
+        className: "nav-links"
+      }, _react.default.createElement("a", {
+        href: "/about/"
+      }, "About Us"))), _react.default.createElement("button", {
+        className: "DiveInButton",
+        onClick: this.authenticate
       }, _react.default.createElement("div", {
-        className: "row"
-      }, _react.default.createElement("div", {
-        className: "col-xs-8 col-xs-offset-2 jumbotron text-center"
-      }, _react.default.createElement("h1", null, "Jokeish"), _react.default.createElement("p", null, "A load of Dad jokes XD"), _react.default.createElement("p", null, "Sign in to get access "), _react.default.createElement("a", {
-        onClick: this.authenticate,
-        className: "btn btn-primary btn-lg btn-login btn-block"
-      }, "Sign In"))));
+        className: "transform"
+      }, "L O G I N")));
     }
   }]);
 
@@ -45629,7 +45633,7 @@ function (_React$Component4) {
 if (module.hot) {
   module.hot.accept();
 }
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","react-router":"../node_modules/react-router/es/index.js","./../css/index.css":"css/index.css","jquery":"../node_modules/jquery/dist/jquery.js","bulma":"../node_modules/bulma/bulma.sass","auth0-js":"../node_modules/auth0-js/dist/auth0.min.esm.js"}],"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","react-router":"../node_modules/react-router/es/index.js","./../css/index.css":"css/index.css","jquery":"../node_modules/jquery/dist/jquery.js","auth0-js":"../node_modules/auth0-js/dist/auth0.min.esm.js"}],"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -45657,7 +45661,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44521" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35481" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

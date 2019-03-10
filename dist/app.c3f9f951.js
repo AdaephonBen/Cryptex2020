@@ -45571,22 +45571,22 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("div", {
-        className: "nav-links"
-      }, _react.default.createElement("a", {
+      return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
         href: "/rules/"
-      }, "Rules")), _react.default.createElement("div", {
+      }, _react.default.createElement("div", {
         className: "nav-links"
-      }, _react.default.createElement("a", {
+      }, "Rules")), _react.default.createElement("a", {
         href: "/crypt2019/"
-      }, "Cryptex 2019")), _react.default.createElement("div", {
+      }, _react.default.createElement("div", {
         className: "nav-links"
-      }, _react.default.createElement("a", {
+      }, "Cryptex 2019")), _react.default.createElement("a", {
         href: "/sponsors"
-      }, "Sponsors")), _react.default.createElement("div", {
+      }, _react.default.createElement("div", {
         className: "nav-links"
-      }, _react.default.createElement("a", {
+      }, "Sponsors")), _react.default.createElement("a", {
         href: "/about/"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
       }, "About Us"))), _react.default.createElement("button", {
         className: "DiveInButton",
         onClick: this.authenticate

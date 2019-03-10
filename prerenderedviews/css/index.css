@@ -33,21 +33,23 @@ body {
 	transition: 1s transform;
 }
 .DiveInButton:hover div{
-	transform: scale(1.15);
+	transform: scale(1.05);
 	transition: 1s transform;
 }
 .nav-links {
 	font-size: 1.5vw;
-	border:1px solid black;
+	border:1px solid #261D2B;
 	display: inline-block;
-	width: 10%;
-	height: 4vh;
+	width: 20%;
+	height: 6vh;
+	vertical-align: middle;
+	line-height: 6vh;
 }
-.nav-links a {
+a .nav-links {
 	margin: auto;
 	color: #FFFFFF;
 	text-decoration: none;
 }
 .nav-links:hover {
-
+	border:1px solid #FFD300;
 }

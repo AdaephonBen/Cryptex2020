@@ -104,10 +104,10 @@ class Home extends React.Component {
     return (
     	<div>
     	<nav>
-    		<div className="nav-links"><a href="/rules/">Rules</a></div>
-    		<div className="nav-links"><a href="/crypt2019/">Cryptex 2019</a></div>
-    		<div className="nav-links"><a href="/sponsors">Sponsors</a></div>
-    		<div className="nav-links"><a href="/about/">About Us</a></div>
+    		<a href="/rules/"><div className="nav-links">Rules</div></a>
+    		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
+    		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
+    		<a href="/about/"><div className="nav-links">About Us</div></a>
     	</nav>
     	<button className="DiveInButton" onClick={this.authenticate}><div className="transform">D I V E &nbsp; I N</div></button>
     	</div>

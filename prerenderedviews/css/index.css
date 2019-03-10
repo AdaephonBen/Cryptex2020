@@ -9,15 +9,15 @@ body {
 	        transition-timing-function: ease-in;
 	position: absolute;
 	top:45%;
-	left:42.5%;
-	right:42.5%;
+	left:41.5%;
+	right:41.5%;
 	bottom:45%;
 	font-family: 'Oswald', sans-serif;
 	font-size: 2.5vw;
 	border:3px solid #61A8D6;
 	color:#61A8D6;
 	background-color: #261D2B;
-	width: 15%;
+	width: 17%;
 	height: 10%;
 	-webkit-transition: 1s all;
 	-o-transition: 1s all;

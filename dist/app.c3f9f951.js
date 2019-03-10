@@ -45592,7 +45592,7 @@ function (_React$Component3) {
         onClick: this.authenticate
       }, _react.default.createElement("div", {
         className: "transform"
-      }, "L O G I N")));
+      }, "D I V E \xA0 I N")));
     }
   }]);
 
@@ -45661,7 +45661,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35481" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40469" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

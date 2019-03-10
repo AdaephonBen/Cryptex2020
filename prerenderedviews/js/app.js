@@ -109,7 +109,7 @@ class Home extends React.Component {
     		<div className="nav-links"><a href="/sponsors">Sponsors</a></div>
     		<div className="nav-links"><a href="/about/">About Us</a></div>
     	</nav>
-    	<button className="DiveInButton" onClick={this.authenticate}><div className="transform">L O G I N</div></button>
+    	<button className="DiveInButton" onClick={this.authenticate}><div className="transform">D I V E &nbsp; I N</div></button>
     	</div>
     	);
   }

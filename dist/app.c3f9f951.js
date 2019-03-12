@@ -45512,7 +45512,46 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      if (this.loggedIn) return _react.default.createElement(LoggedIn, null);else return _react.default.createElement(Home, null);
+      if (this.loggedIn) return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
+        href: "/rules/",
+        onClick: ""
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "Rules")), _react.default.createElement("a", {
+        href: "/crypt2019/"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "Cryptex 2019")), _react.default.createElement("a", {
+        href: "/sponsors"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "Sponsors")), _react.default.createElement("a", {
+        href: "/about/"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "About Us"))), " ", _react.default.createElement(LoggedIn, null), " ");else return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
+        href: "/rules/",
+        onClick: ""
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "Rules")), _react.default.createElement("a", {
+        href: "/crypt2019/"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "Cryptex 2019")), _react.default.createElement("a", {
+        href: "/",
+        onClick: ""
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "C R Y P T E X")), _react.default.createElement("a", {
+        href: "/sponsors"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "Sponsors")), _react.default.createElement("a", {
+        href: "/about/"
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "About Us"))), _react.default.createElement(Home, null));
     }
   }]);
 
@@ -45571,23 +45610,7 @@ function (_React$Component3) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
-        href: "/rules/"
-      }, _react.default.createElement("div", {
-        className: "nav-links"
-      }, "Rules")), _react.default.createElement("a", {
-        href: "/crypt2019/"
-      }, _react.default.createElement("div", {
-        className: "nav-links"
-      }, "Cryptex 2019")), _react.default.createElement("a", {
-        href: "/sponsors"
-      }, _react.default.createElement("div", {
-        className: "nav-links"
-      }, "Sponsors")), _react.default.createElement("a", {
-        href: "/about/"
-      }, _react.default.createElement("div", {
-        className: "nav-links"
-      }, "About Us"))), _react.default.createElement("button", {
+      return _react.default.createElement("div", null, _react.default.createElement("button", {
         className: "DiveInButton",
         onClick: this.authenticate
       }, _react.default.createElement("div", {

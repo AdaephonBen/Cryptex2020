@@ -8,6 +8,8 @@
 package main
 
 import (
+    "strings"
+    "io"
     "encoding/json"
     "errors"
     "github.com/auth0/go-jwt-middleware"
@@ -16,6 +18,7 @@ import (
     "github.com/gorilla/mux"
     "github.com/joho/godotenv"
     "log"
+    "compress/gzip"
     "net/http"
     "os"
 )
@@ -46,7 +49,6 @@ func main() {
     router.Handle("/", http.FileServer(http.Dir("./dist/")))
    // router.Handle("/callback", http.ServeFile())
     router.Handle("/status", Status).Methods("GET")
-
     // Without JWT middleware check
     // router.Handle("/things", ThingsHandler).Methods("GET")
     router.Handle("/things", jwtMiddleware.Handler(ThingsHandler)).Methods("GET")
@@ -58,13 +60,43 @@ func main() {
 
     router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
 
-    http.ListenAndServe(":8080", handlers.LoggingHandler(os.Stdout, router))
+    http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
 }
 
 /******************************************/
 /* Handlers for respective HTTP responses */
 /******************************************/
+type gzipResponseWriter struct {
+    io.Writer
+    http.ResponseWriter
+}
 
+func (w gzipResponseWriter) Write(b []byte) (int, error) {
+    return w.Writer.Write(b)
+}
+
+// EnableGZIP will attempt to compress the response if the client has passed a
+// header value for Accept-Encoding which allows gzip
+func EnableGZIP(fn http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        gz := gzip.NewWriter(w)
+        defer gz.Close()
+        gzr := gzipResponseWriter{Writer: gz, ResponseWriter: w}
+        fn.ServeHTTP(gzr, r)
+    })
+}
+func gzipHandler(h http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        if !strings.Contains(r.Header.Get("Accept-Encoding"), "gzip") {
+            h.ServeHTTP(w, r)
+            return
+        }
+        w.Header().Set("Content-Encoding", "gzip")
+        gz := gzip.NewWriter(w)
+        defer gz.Close()
+        h.ServeHTTP(gzipResponseWriter{Writer: gz, ResponseWriter: w}, r)
+    })
+}
 var NotImplemented = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     w.Write([]byte("Not Implemented"))
 })

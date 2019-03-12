@@ -73,9 +73,20 @@ class App extends React.Component {
 
 	render() {
 		if (this.loggedIn)
-			return (<LoggedIn />);
+			return (<div><nav>
+    		<a href="/rules/" onClick=""><div className="nav-links">Rules</div></a>
+    		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
+    		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
+    		<a href="/about/"><div className="nav-links">About Us</div></a>
+    	</nav> <LoggedIn /> </div> );
 		else
-			return (<Home />);
+			return (<div><nav>
+    		<a href="/rules/" onClick=""><div className="nav-links">Rules</div></a>
+    		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
+			<a href="/" onClick=""><div className="nav-links">C R Y P T E X</div></a>
+    		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
+    		<a href="/about/"><div className="nav-links">About Us</div></a>
+    	</nav><Home /></div>);
 	}
 }
 class LoggedIn extends React.Component {
@@ -103,12 +114,6 @@ class Home extends React.Component {
   render() {
     return (
     	<div>
-    	<nav>
-    		<a href="/rules/"><div className="nav-links">Rules</div></a>
-    		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
-    		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
-    		<a href="/about/"><div className="nav-links">About Us</div></a>
-    	</nav>
     	<button className="DiveInButton" onClick={this.authenticate}><div className="transform">D I V E &nbsp; I N</div></button>
     	</div>
     	);

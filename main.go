@@ -10,6 +10,7 @@ package main
 import (
     "strings"
     "io"
+    "fmt"
     "encoding/json"
     "errors"
     "github.com/auth0/go-jwt-middleware"
@@ -61,6 +62,7 @@ func main() {
     router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
 
     http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
+    fmt.Println("Server started... ")
 }
 
 /******************************************/

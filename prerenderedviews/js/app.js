@@ -12,7 +12,9 @@ const AUTH0_CLIENT_ID = "Y4lTZL7LZ05OnNglAcsmogfmTbDPDbDN";
 const AUTH0_DOMAIN = "cryptex.auth0.com";
 const AUTH0_CALLBACK_URL = location.href;
 const AUTH0_API_AUDIENCE = "https://cryptex.auth0.com/api/v2/";
+const AUTH0_OPTIONS = {
 
+};
 
 class App extends React.Component {
 	parseHash() {

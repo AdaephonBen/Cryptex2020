@@ -8,53 +8,44 @@
 package main
 
 import (
+    "context"
+    "time"
+    jose "gopkg.in/square/go-jose.v2"
+    "github.com/auth0-community/auth0"
+    "go.mongodb.org/mongo-driver/mongo/options"
+    "go.mongodb.org/mongo-driver/bson"
+    "go.mongodb.org/mongo-driver/mongo"
     "strings"
     "io"
     "fmt"
-    "encoding/json"
-    "errors"
     "github.com/auth0/go-jwt-middleware"
     "github.com/dgrijalva/jwt-go"
     "github.com/gorilla/handlers"
     "github.com/gorilla/mux"
-    "github.com/joho/godotenv"
-    "log"
     "compress/gzip"
     "net/http"
     "os"
 )
 
-type Thing struct {
-    Id   int
-    Name string
-    Slug string
-}
+var ctx, _ = context.WithTimeout(context.Background(), 10*time.Second)
+var client, err = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
+var collection = client.Database("cryptex").Collection("users")
 
-var things = []Thing{
-    Thing{Id: 1, Name: "Thing 1", Slug: "Slug 1"},
-    Thing{Id: 2, Name: "Thing 2", Slug: "Slug 2"},
-    Thing{Id: 3, Name: "Thing 3", Slug: "Slug 3"},
-    Thing{Id: 4, Name: "Thing 4", Slug: "Slug 4"},
-    Thing{Id: 5, Name: "Thing 5", Slug: "Slug 5"},
-}
+// Define globals here
+var mySigningKey = []byte("secret")
+
 
 func main() {
 
-    err := godotenv.Load()
-    if err != nil {
-        log.Fatal("Error reading .env file")
-    }
-
+    fmt.Println("Server started... ")
     router := mux.NewRouter()
 
     router.Handle("/", http.FileServer(http.Dir("./dist/")))
    // router.Handle("/callback", http.ServeFile())
-    router.Handle("/status", Status).Methods("GET")
     // Without JWT middleware check
     // router.Handle("/things", ThingsHandler).Methods("GET")
-    router.Handle("/things", jwtMiddleware.Handler(ThingsHandler)).Methods("GET")
 
-    router.Handle("/thing/{slug}/foo", jwtMiddleware.Handler(AddToThingHandler)).Methods("POST")
+
 
     // Not necessary when wired up to Auth0 to get tokens
     // router.Handle("/get-token", GetTokenHandler).Methods("GET")
@@ -62,7 +53,6 @@ func main() {
     router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
 
     http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
-    fmt.Println("Server started... ")
 }
 
 /******************************************/
@@ -107,56 +97,61 @@ var Status = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     w.Write([]byte("We're OK"))
 })
 
-var ThingsHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    payload, _ := json.Marshal(things)
-    w.Header().Set("Content-Type", "application/json")
-    w.Write([]byte(payload))
-})
 
-var AddToThingHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    var thing Thing
+
+
+var newUser = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     vars := mux.Vars(r)
-    slug := vars["slug"]
-
-    for _, t := range things {
-        if t.Slug == slug {
-            thing = t
-        }
-    }
-
-    w.Header().Set("Content-Type", "application/json")
-
-    if thing.Slug != "" {
-        payload, _ := json.Marshal(thing)
-        w.Write([]byte(payload))
-    } else {
-        w.Write([]byte("Thing not found..."))
-    }
+    secret := vars["secret"]
+    username := vars["username"]
+    fmt.Println(secret + " : " + username)
+    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+    res, err := collection.InsertOne(ctx, bson.M{"secret": secret, "username": username, "level": -1})
+    id := res.InsertedID
+    fmt.Println(id)
+    fmt.Println(err)
 })
 
 // Uncomment to not generate tokens within Auth0, but manually instead.
 
-// var signingKey = []byte("secret")
-// var GetTokenHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-//  token := jwt.New(jwt.SigningMethodHS256)
-//  claims := token.Claims.(jwt.MapClaims)
-//  claims["admin"] = true
-//  claims["name"] = "Me!"
-//  claims["exp"] = time.Now().Add(time.Hour * 24).Unix()
+var signingKey = []byte("secret")
+var GetTokenHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+ token := jwt.New(jwt.SigningMethodHS256)
+ claims := token.Claims.(jwt.MapClaims)
+ claims["admin"] = true
+ claims["name"] = "Me!"
+ claims["exp"] = time.Now().Add(time.Hour * 24).Unix()
 
-//  tokenString, _ := token.SignedString(signingKey)
-//  w.Write([]byte(tokenString))
-// })
+ tokenString, _ := token.SignedString(signingKey)
+ w.Write([]byte(tokenString))
+})
+
+func authMiddleware(next http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        secret := []byte("yx1C48TyLz4XzZzdeXiAOrRz5enXnyjK")
+        secretProvider := auth0.NewKeyProvider(secret)
+        audience := []string{"AUDI"}
+
+        configuration := auth0.NewConfiguration(secretProvider, audience, "https://cryptex.auth0.com/", jose.HS256)
+        validator := auth0.NewValidator(configuration,nil)
+
+        token, err := validator.ValidateRequest(r)
+
+        if err != nil {
+            fmt.Println(err)
+            fmt.Println("Token is not valid:", token)
+            w.WriteHeader(http.StatusUnauthorized)
+            w.Write([]byte("Unauthorized"))
+        } else {
+            next.ServeHTTP(w, r)
+        }
+    })
+}
+
 
 var jwtMiddleware = jwtmiddleware.New(jwtmiddleware.Options{
-    ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
-        signingKey := []byte(os.Getenv("AUTH0_CLIENT_SECRET"))
-        if len(signingKey) == 0 {
-            return nil, errors.New("No Auth0 Client Secret set.")
-        }
-        return signingKey, nil
-    },
-    SigningMethod: jwt.SigningMethodHS256,
-    // Extractor:     jwtmiddleware.FromAuthHeader,
-    // Debug:         true,
+  ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
+    return mySigningKey, nil
+  },
+  SigningMethod: jwt.SigningMethodHS256,
 })

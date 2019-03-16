@@ -45444,10 +45444,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var AUTH0_CLIENT_ID = "Y4lTZL7LZ05OnNglAcsmogfmTbDPDbDN";
+var AUTH0_CLIENT_ID = "wwJpHRC6q1Xv5Rmann7rbReB9DFlZlyC";
 var AUTH0_DOMAIN = "cryptex.auth0.com";
 var AUTH0_CALLBACK_URL = location.href;
-var AUTH0_API_AUDIENCE = "https://cryptex.auth0.com/api/v2/";
+var AUTH0_API_AUDIENCE = "AUDI";
 
 var App =
 /*#__PURE__*/
@@ -45473,10 +45473,10 @@ function (_React$Component) {
         }
 
         if (authResult !== null && authResult.accessToken !== null && authResult.idToken !== null) {
-          localStorage.setItem("access_token", authResult.accessToken);
-          localStorage.setItem("id_token", authResult.idToken);
-          localStorage.setItem("profile", JSON.stringify(authResult.idTokenPayload));
-          window.location = window.location.href.substr(0, window.location.href.indexOf("#"));
+          localStorage.setItem('access_token', authResult.accessToken);
+          localStorage.setItem('id_token', authResult.idToken);
+          localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
+          window.location = window.location.href.substr(0, window.location.href.indexOf('#'));
         }
       });
     }
@@ -45484,9 +45484,9 @@ function (_React$Component) {
     key: "setup",
     value: function setup() {
       _jquery.default.ajaxSetup({
-        beforeSend: function beforeSend(r) {
-          if (localStorage.getItem("access_token")) {
-            r.setRequestHeader("Authorization", "Bearer " + localStorage.getItem("access_token"));
+        'beforeSend': function beforeSend(xhr) {
+          if (localStorage.getItem('access_token')) {
+            xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.getItem('access_token'));
           }
         }
       });
@@ -45572,7 +45572,7 @@ function (_React$Component2) {
   _createClass(LoggedIn, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("p", null, "You are logged in");
+      return _react.default.createElement("div", null, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("profile")).name, ". "), _react.default.createElement("p", null, "Give us a username"));
     }
   }]);
 
@@ -45643,15 +45643,7 @@ function (_React$Component4) {
   return Callback;
 }(_react.default.Component);
 
-(0, _reactDom.render)(_react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Route, {
-  path: "/",
-  component: App,
-  history: _reactRouter.browserHistory
-}), _react.default.createElement(_reactRouterDom.Route, {
-  path: "/callback",
-  component: Callback,
-  history: _reactRouter.browserHistory
-}))), document.getElementById('app'));
+(0, _reactDom.render)(_react.default.createElement(App, null), document.getElementById('app'));
 
 if (module.hot) {
   module.hot.accept();
@@ -45684,7 +45676,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41007" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38989" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -8,13 +8,10 @@ import "./../css/index.css"
 import $ from 'jquery';
 import auth0 from 'auth0-js';
 
-const AUTH0_CLIENT_ID = "Y4lTZL7LZ05OnNglAcsmogfmTbDPDbDN";
+const AUTH0_CLIENT_ID = "wwJpHRC6q1Xv5Rmann7rbReB9DFlZlyC";
 const AUTH0_DOMAIN = "cryptex.auth0.com";
 const AUTH0_CALLBACK_URL = location.href;
-const AUTH0_API_AUDIENCE = "https://cryptex.auth0.com/api/v2/";
-const AUTH0_OPTIONS = {
-
-};
+const AUTH0_API_AUDIENCE = "AUDI";
 
 class App extends React.Component {
 	parseHash() {
@@ -26,36 +23,24 @@ class App extends React.Component {
 	      if (err) {
 	        return console.log(err);
 	      }
-	      if (
-	        authResult !== null &&
-	        authResult.accessToken !== null &&
-	        authResult.idToken !== null
-	      ) {
-	        localStorage.setItem("access_token", authResult.accessToken);
-	        localStorage.setItem("id_token", authResult.idToken);
-	        localStorage.setItem(
-	          "profile",
-	          JSON.stringify(authResult.idTokenPayload)
-	        );
-	        window.location = window.location.href.substr(
-	          0,
-	          window.location.href.indexOf("#")
-	        );
-	      }
+	      if(authResult !== null && authResult.accessToken !== null && authResult.idToken !== null){
+	              localStorage.setItem('access_token', authResult.accessToken);
+	              localStorage.setItem('id_token', authResult.idToken);
+	              localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
+	          window.location = window.location.href.substr(0, window.location.href.indexOf('#'))
+	            }
 	    });
 	  }
 
 	  setup() {
 	    $.ajaxSetup({
-	      beforeSend: (r) => {
-	        if (localStorage.getItem("access_token")) {
-	          r.setRequestHeader(
-	            "Authorization",
-	            "Bearer " + localStorage.getItem("access_token")
-	          );
-	        }
-	      }
-	    });
+	          'beforeSend': function(xhr) {
+	            if (localStorage.getItem('access_token')) {
+	              xhr.setRequestHeader('Authorization',
+	                    'Bearer ' + localStorage.getItem('access_token'));
+	            }
+	          }
+	        });
 	  }
 
 	  setState() {
@@ -91,9 +76,11 @@ class App extends React.Component {
     	</nav><Home /></div>);
 	}
 }
-class LoggedIn extends React.Component {
-	render() {
-		return(<p>You are logged in</p>);
+class LoggedIn extends React.Component 
+{
+	render() 
+	{
+		return(<div><p>You are logged in, {JSON.parse(localStorage.getItem("profile")).name}. </p><p>Give us a username</p></div>);
 	}
 }
 class Home extends React.Component {
@@ -129,12 +116,7 @@ class Callback extends React.Component {
 }
 
 render(
-	<BrowserRouter>
-		<div>
-		<Route path="/" component={App} history={browserHistory}/>
-		<Route path="/callback" component={Callback} history={browserHistory}/>
-		</div>
-	</BrowserRouter>
+	<App />
 ,document.getElementById('app'));
 
 

@@ -8,10 +8,10 @@ import "./../css/index.css"
 import $ from 'jquery';
 import auth0 from 'auth0-js';
 
-const AUTH0_CLIENT_ID = "wwJpHRC6q1Xv5Rmann7rbReB9DFlZlyC";
-const AUTH0_DOMAIN = "cryptex.auth0.com";
-const AUTH0_CALLBACK_URL = location.href;
-const AUTH0_API_AUDIENCE = "AUDI";
+const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
+const AUTH0_DOMAIN = "cryptex2020.auth0.com";
+const AUTH0_CALLBACK_URL = "http://localhost:8080";
+const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 class App extends React.Component {
 	parseHash() {
@@ -27,7 +27,7 @@ class App extends React.Component {
 	              localStorage.setItem('access_token', authResult.accessToken);
 	              localStorage.setItem('id_token', authResult.idToken);
 	              localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
-	          window.location = window.location.href.substr(0, window.location.href.indexOf('#'))
+	          window.location = window.location.href.substr(0, window.location.href.indexOf(''))
 	            }
 	    });
 	  }

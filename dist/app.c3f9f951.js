@@ -45444,10 +45444,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var AUTH0_CLIENT_ID = "wwJpHRC6q1Xv5Rmann7rbReB9DFlZlyC";
-var AUTH0_DOMAIN = "cryptex.auth0.com";
-var AUTH0_CALLBACK_URL = location.href;
-var AUTH0_API_AUDIENCE = "AUDI";
+var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
+var AUTH0_DOMAIN = "cryptex2020.auth0.com";
+var AUTH0_CALLBACK_URL = "http://localhost:8080";
+var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 var App =
 /*#__PURE__*/
@@ -45476,7 +45476,7 @@ function (_React$Component) {
           localStorage.setItem('access_token', authResult.accessToken);
           localStorage.setItem('id_token', authResult.idToken);
           localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
-          window.location = window.location.href.substr(0, window.location.href.indexOf('#'));
+          window.location = window.location.href.substr(0, window.location.href.indexOf(''));
         }
       });
     }
@@ -45676,7 +45676,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41427" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43735" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

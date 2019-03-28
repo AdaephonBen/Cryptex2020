@@ -45475,7 +45475,7 @@ function (_React$Component) {
         if (authResult !== null && authResult.accessToken !== null && authResult.idToken !== null) {
           localStorage.setItem('access_token', authResult.accessToken);
           localStorage.setItem('id_token', authResult.idToken);
-          localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
+          localStorage.setItem('email', JSON.stringify(authResult.idTokenPayload));
           window.location = window.location.href.substr(0, window.location.href.indexOf(''));
         }
       });
@@ -45522,6 +45522,11 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "nav-links"
       }, "Cryptex 2019")), _react.default.createElement("a", {
+        href: "/",
+        onClick: ""
+      }, _react.default.createElement("div", {
+        className: "nav-links"
+      }, "C R Y P T E X")), _react.default.createElement("a", {
         href: "/sponsors"
       }, _react.default.createElement("div", {
         className: "nav-links"
@@ -45529,7 +45534,9 @@ function (_React$Component) {
         href: "/about/"
       }, _react.default.createElement("div", {
         className: "nav-links"
-      }, "About Us"))), " ", _react.default.createElement(LoggedIn, null), " ");else return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
+      }, "About Us")), _react.default.createElement("div", {
+        className: "bar"
+      })), " ", _react.default.createElement(LoggedIn, null), " ");else return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
         href: "/rules/",
         onClick: ""
       }, _react.default.createElement("div", {
@@ -45542,7 +45549,7 @@ function (_React$Component) {
         href: "/",
         onClick: ""
       }, _react.default.createElement("div", {
-        className: "nav-links"
+        id: "nav-links-main"
       }, "C R Y P T E X")), _react.default.createElement("a", {
         href: "/sponsors"
       }, _react.default.createElement("div", {
@@ -45563,16 +45570,60 @@ var LoggedIn =
 function (_React$Component2) {
   _inherits(LoggedIn, _React$Component2);
 
-  function LoggedIn() {
+  function LoggedIn(props) {
+    var _this;
+
     _classCallCheck(this, LoggedIn);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(LoggedIn).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(LoggedIn).call(this, props));
+    _this.state = {
+      value: ""
+    };
+    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(LoggedIn, [{
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      event.preventDefault();
+      var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + this.state.value;
+      fetch(loginUrl).then();
+    }
+  }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("profile")).name, ". "), _react.default.createElement("p", null, "Give us a username"));
+      var _this2 = this;
+
+      fetch("/retrievelevel/" + JSON.parse(localStorage.getItem("email")).email).then(function (result) {
+        console.log(result);
+
+        if (result.message === "-2") {
+          return _react.default.createElement("div", {
+            "class": "username-form"
+          }, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("email")).email, ". "), _react.default.createElement("p", null, "Give us a username"), _react.default.createElement("form", {
+            onSubmit: _this2.handleSubmit
+          }, _react.default.createElement("input", {
+            type: "name",
+            "class": "username",
+            value: _this2.state.value,
+            onChange: _this2.handleChange
+          }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
+            type: "submit",
+            "class": "username-button",
+            value: "Submit"
+          })));
+        } // Add other conditions for levels here linking to other React Components
+
+      });
     }
   }]);
 
@@ -45585,13 +45636,13 @@ function (_React$Component3) {
   _inherits(Home, _React$Component3);
 
   function Home(props) {
-    var _this;
+    var _this3;
 
     _classCallCheck(this, Home);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
-    _this.authenticate = _this.authenticate.bind(_assertThisInitialized(_this));
-    return _this;
+    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this3.authenticate = _this3.authenticate.bind(_assertThisInitialized(_this3));
+    return _this3;
   }
 
   _createClass(Home, [{
@@ -45600,7 +45651,7 @@ function (_React$Component3) {
       this.WebAuth = new _auth0Js.default.WebAuth({
         domain: AUTH0_DOMAIN,
         clientID: AUTH0_CLIENT_ID,
-        scope: "openid profile",
+        scope: "openid email",
         audience: AUTH0_API_AUDIENCE,
         responseType: "token id_token",
         redirectUri: AUTH0_CALLBACK_URL
@@ -45676,7 +45727,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43735" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43719" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

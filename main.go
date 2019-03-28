@@ -4,6 +4,10 @@ import (
     "encoding/json"
     "io"
     "compress/gzip"
+    "time"
+    "go.mongodb.org/mongo-driver/mongo/options"
+    "go.mongodb.org/mongo-driver/bson"
+    "context"
     "fmt"
     "net/http"
     "strings"
@@ -15,6 +19,8 @@ import (
     "github.com/auth0/go-jwt-middleware"
     "github.com/dgrijalva/jwt-go"
     "github.com/gorilla/mux"
+    "go.mongodb.org/mongo-driver/mongo"
+    "log"
     // "github.com/joho/godotenv"
 )
 
@@ -35,16 +41,20 @@ type JSONWebKeys struct {
     X5c []string `json:"x5c"`
 }
 
+type user struct {
+    clientID string `json:"clientID"`
+    username string  `json:"username"`
+    level int `json:"level"`
+}
 
 // var ctx, _ = context.WithTimeout(context.Background(), 10*time.Second)
 // var client, err = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
 // var collection = client.Database("cryptex").Collection("users")
 
 
-
 func main() {
-
     fmt.Println("Server started... ")
+    fmt.Println("To do : Protect all endpoints with JWT Auth")
     jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options {
         ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
             // Verify 'aud' claim
@@ -76,6 +86,8 @@ func main() {
    // router.Handle("/callback", http.ServeFile())
     // Without JWT middleware check
     // router.Handle("/things", ThingsHandler).Methods("GET")
+    router.HandleFunc("/adduser/{ID}/{username}", AddUser)
+    router.HandleFunc("/retrievelevel/{ID}", RetrieveLevel)
 
     router.Handle("/api/private", negroni.New(
         negroni.HandlerFunc(jwtMiddleware.HandlerWithNext),
@@ -88,7 +100,6 @@ func main() {
     // router.Handle("/get-token", GetTokenHandler).Methods("GET")
 
     router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
-
     http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
 }
 
@@ -120,7 +131,6 @@ func gzipHandler(h http.Handler) http.Handler {
         h.ServeHTTP(gzipResponseWriter{Writer: gz, ResponseWriter: w}, r)
     })
 }
-
 // var newUser = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request)
 // {
 //     vars := mux.Vars(r)
@@ -162,6 +172,26 @@ func getPemCert(token *jwt.Token) (string, error) {
 
     return cert, nil
 }
+func String(n int32) string {
+    buf := [11]byte{}
+    pos := len(buf)
+    i := int64(n)
+    signed := i < 0
+    if signed {
+        i = -i
+    }
+    for {
+        pos--
+        buf[pos], i = '0'+byte(i%10), i/10
+        if i == 0 {
+            if signed {
+                pos--
+                buf[pos] = '-'
+            }
+            return string(buf[pos:])
+        }
+    }
+}
 func responseJSON(message string, w http.ResponseWriter, statusCode int) {
     response := Response{message}
 
@@ -174,4 +204,45 @@ func responseJSON(message string, w http.ResponseWriter, statusCode int) {
     w.Header().Set("Content-Type", "application/json")
     w.WriteHeader(statusCode)
     w.Write(jsonResponse)
+}
+func AddUser(w http.ResponseWriter, request *http.Request) {
+    vars := mux.Vars(request)
+    // MongoDB
+    client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+    err = client.Connect(ctx)
+    fmt.Println(err)
+    collection := client.Database("Cryptex").Collection("users")
+    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+    find, err := collection.Find(ctx, bson.M{"clientID": vars["ID"]})
+    JSOND, err := json.Marshal(find.Next(ctx))
+    UserStatus := string(JSOND)
+    if strings.Compare(UserStatus, "false") == 0 {
+        res, err := collection.InsertOne(ctx, bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -2})
+        fmt.Println("Added a new user to MongoDB")
+        fmt.Println("MongoDB ID ")
+        fmt.Println(res.InsertedID)
+        fmt.Println(err)
+    }
+}
+func RetrieveLevel(w http.ResponseWriter, request *http.Request) {
+    vars := mux.Vars(request)
+    client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+    err = client.Connect(ctx)
+    fmt.Println(err)
+    collection := client.Database("Cryptex").Collection("users")
+    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+    filter := bson.M{"clientID" : vars["ID"]}
+    var result map[string]interface{}
+    err = collection.FindOne(ctx, filter).Decode(&result)
+    if err == nil {
+        log.Fatal(err)
+    }
+    if (result["level"] == nil){
+        responseJSON(String(int32(-2)), w, http.StatusOK)
+    } else {
+        integer := result["level"].(int32)
+        responseJSON(String(integer), w, http.StatusOK)
+    }
 }

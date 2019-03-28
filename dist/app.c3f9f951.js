@@ -45447,7 +45447,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
 var AUTH0_CALLBACK_URL = "http://localhost:8080";
-var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
+var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/"; // to do
+// immortal db for emails
 
 var App =
 /*#__PURE__*/
@@ -45578,7 +45579,10 @@ function (_React$Component2) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(LoggedIn).call(this, props));
     _this.state = {
       value: ""
-    };
+    }; // this.url = "/retrievelevel/"+JSON.parse(localStorage.getItem("email")).email;
+
+    _this.url = "https://opinionated-quotes-api.gigalixirapp.com/v1/quotes";
+    _this.level = -1;
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     return _this;
@@ -45601,29 +45605,10 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
-      fetch("/retrievelevel/" + JSON.parse(localStorage.getItem("email")).email).then(function (result) {
-        console.log(result);
-
-        if (result.message === "-2") {
-          return _react.default.createElement("div", {
-            "class": "username-form"
-          }, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("email")).email, ". "), _react.default.createElement("p", null, "Give us a username"), _react.default.createElement("form", {
-            onSubmit: _this2.handleSubmit
-          }, _react.default.createElement("input", {
-            type: "name",
-            "class": "username",
-            value: _this2.state.value,
-            onChange: _this2.handleChange
-          }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
-            type: "submit",
-            "class": "username-button",
-            value: "Submit"
-          })));
-        } // Add other conditions for levels here linking to other React Components
-
+      fetch("https://opinionated-quotes-api.gigalixirapp.com/v1/quotes").then(function (result) {
+        console.log(result.text());
       });
+      return _react.default.createElement("p", null, this.level);
     }
   }]);
 
@@ -45636,13 +45621,13 @@ function (_React$Component3) {
   _inherits(Home, _React$Component3);
 
   function Home(props) {
-    var _this3;
+    var _this2;
 
     _classCallCheck(this, Home);
 
-    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
-    _this3.authenticate = _this3.authenticate.bind(_assertThisInitialized(_this3));
-    return _this3;
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this2.authenticate = _this2.authenticate.bind(_assertThisInitialized(_this2));
+    return _this2;
   }
 
   _createClass(Home, [{
@@ -45727,7 +45712,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43719" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40851" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

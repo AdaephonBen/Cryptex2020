@@ -13,6 +13,9 @@ const AUTH0_DOMAIN = "cryptex2020.auth0.com";
 const AUTH0_CALLBACK_URL = "http://localhost:8080";
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
+// to do
+// immortal db for emails
+
 class App extends React.Component {
 	parseHash() {
 	    this.auth0 = new auth0.WebAuth({
@@ -90,7 +93,9 @@ class LoggedIn extends React.Component
 	{
 		super(props);
 		this.state = {value: ""};
-
+		// this.url = "/retrievelevel/"+JSON.parse(localStorage.getItem("email")).email;
+		this.url = "https://opinionated-quotes-api.gigalixirapp.com/v1/quotes";
+		this.level = -1 ;
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
@@ -106,26 +111,12 @@ class LoggedIn extends React.Component
 	}
 	render() 
 	{
-		fetch("/retrievelevel/"+JSON.parse(localStorage.getItem("email")).email).then(
+		fetch("https://opinionated-quotes-api.gigalixirapp.com/v1/quotes").then(
 			result => {
-				console.log(result);
-				if (result.message === "-2")
-				{
-					return(
-						<div class="username-form">
-							<p>You are logged in, {JSON.parse(localStorage.getItem("email")).email}. </p>
-							<p>Give us a username</p>
-							<form onSubmit={this.handleSubmit}>
-								<input type="name" class="username" value={this.state.value} onChange={this.handleChange}/>
-								<br /><br />
-								<input type="submit" class="username-button" value="Submit" />
-							</form>
-						</div>
-					);
-				}
-				// Add other conditions for levels here linking to other React Components
+				console.log(result.text());
 			}
 		);
+		return(<p>{this.level}</p>);
 	}
 }
 class Home extends React.Component {

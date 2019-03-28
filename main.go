@@ -20,7 +20,6 @@ import (
     "github.com/dgrijalva/jwt-go"
     "github.com/gorilla/mux"
     "go.mongodb.org/mongo-driver/mongo"
-    "log"
     // "github.com/joho/godotenv"
 )
 
@@ -236,12 +235,11 @@ func RetrieveLevel(w http.ResponseWriter, request *http.Request) {
     filter := bson.M{"clientID" : vars["ID"]}
     var result map[string]interface{}
     err = collection.FindOne(ctx, filter).Decode(&result)
-    if err == nil {
-        log.Fatal(err)
-    }
     if (result["level"] == nil){
+        fmt.Println("if")
         responseJSON(String(int32(-2)), w, http.StatusOK)
     } else {
+        fmt.Println("else")
         integer := result["level"].(int32)
         responseJSON(String(integer), w, http.StatusOK)
     }

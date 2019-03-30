@@ -45408,6 +45408,11 @@ exports.default = _default;
 },{}],"js/app.js":[function(require,module,exports) {
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Level;
+
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireWildcard(require("react-dom"));
@@ -45447,8 +45452,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
 var AUTH0_CALLBACK_URL = "http://localhost:8080";
-var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/"; // to do
+var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
+
+function Level(_ref) {
+  var clientID = _ref.clientID;
+  return _react.default.createElement(Query, {
+    query: GET_LEVEL,
+    variables: {
+      clientID: clientID
+    }
+  }, function (_ref2) {
+    var data = _ref2.data,
+        loading = _ref2.loading,
+        error = _ref2.error;
+    if (loading) return _react.default.createElement(Loading, null);
+    if (error) return _react.default.createElement("p", null, "Error : ", error.message, " ");
+  });
+} // to do
 // immortal db for emails
+
 
 var App =
 /*#__PURE__*/
@@ -45511,8 +45533,8 @@ function (_React$Component) {
       this.setState();
     }
   }, {
-    key: "render",
-    value: function render() {
+    key: "renderBody",
+    value: function renderBody() {
       if (this.loggedIn) return _react.default.createElement("div", null, _react.default.createElement("nav", null, _react.default.createElement("a", {
         href: "/rules/",
         onClick: ""
@@ -45526,7 +45548,7 @@ function (_React$Component) {
         href: "/",
         onClick: ""
       }, _react.default.createElement("div", {
-        className: "nav-links"
+        id: "nav-links-main"
       }, "C R Y P T E X")), _react.default.createElement("a", {
         href: "/sponsors"
       }, _react.default.createElement("div", {
@@ -45561,6 +45583,13 @@ function (_React$Component) {
         className: "nav-links"
       }, "About Us"))), _react.default.createElement(Home, null));
     }
+  }, {
+    key: "render",
+    value: function render() {
+      return this.loggedIn == undefined ? _react.default.createElement("div", {
+        className: "loader"
+      }) : this.renderBody();
+    }
   }]);
 
   return App;
@@ -45578,11 +45607,10 @@ function (_React$Component2) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(LoggedIn).call(this, props));
     _this.state = {
-      value: ""
-    }; // this.url = "/retrievelevel/"+JSON.parse(localStorage.getItem("email")).email;
-
-    _this.url = "https://opinionated-quotes-api.gigalixirapp.com/v1/quotes";
-    _this.level = -1;
+      value: "",
+      level: "",
+      clientSecret: ""
+    };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     return _this;
@@ -45598,17 +45626,60 @@ function (_React$Component2) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(event) {
+      var _this2 = this;
+
       event.preventDefault();
-      var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + this.state.value;
-      fetch(loginUrl).then();
+      var url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+      fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        if (result.data.doesUsernameExist == true) {
+          alert("That username exists");
+        } else {
+          var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this2.state.value + "/" + localStorage.getItem("id_token");
+          fetch(loginUrl).then();
+        }
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this3 = this;
+
+      var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
+      fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        _this3.setState({
+          level: result.data.level
+        });
+      });
+    }
+  }, {
+    key: "renderUsername",
+    value: function renderUsername() {
+      return _react.default.createElement("div", {
+        "class": "username-form"
+      }, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("email")).email, ". "), _react.default.createElement("p", null, "Give us a username."), _react.default.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, _react.default.createElement("input", {
+        type: "name",
+        "class": "username",
+        value: this.state.value,
+        onChange: this.handleChange
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
+        type: "submit",
+        "class": "username-button",
+        value: "Submit"
+      })));
     }
   }, {
     key: "render",
     value: function render() {
-      fetch("https://opinionated-quotes-api.gigalixirapp.com/v1/quotes").then(function (result) {
-        console.log(result.text());
+      var level = this.state.level;
+      return level ? this.renderUsername() : _react.default.createElement("div", {
+        className: "loader"
       });
-      return _react.default.createElement("p", null, this.level);
     }
   }]);
 
@@ -45621,13 +45692,13 @@ function (_React$Component3) {
   _inherits(Home, _React$Component3);
 
   function Home(props) {
-    var _this2;
+    var _this4;
 
     _classCallCheck(this, Home);
 
-    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
-    _this2.authenticate = _this2.authenticate.bind(_assertThisInitialized(_this2));
-    return _this2;
+    _this4 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this4.authenticate = _this4.authenticate.bind(_assertThisInitialized(_this4));
+    return _this4;
   }
 
   _createClass(Home, [{
@@ -45679,6 +45750,37 @@ function (_React$Component4) {
   return Callback;
 }(_react.default.Component);
 
+var User =
+/*#__PURE__*/
+function () {
+  function User(level, clientSecret, username) {
+    _classCallCheck(this, User);
+
+    this.level = level;
+    this.clientSecret = clientSecret;
+    this.username = username;
+  }
+
+  _createClass(User, [{
+    key: "getLevel",
+    value: function getLevel() {
+      return this.level;
+    }
+  }, {
+    key: "getClientSecret",
+    value: function getClientSecret() {
+      return this.clientSecret;
+    }
+  }, {
+    key: "getUsername",
+    value: function getUsername() {
+      return this.username;
+    }
+  }]);
+
+  return User;
+}();
+
 (0, _reactDom.render)(_react.default.createElement(App, null), document.getElementById('app'));
 
 if (module.hot) {
@@ -45712,7 +45814,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40851" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33861" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

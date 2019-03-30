@@ -4,7 +4,6 @@ import { render } from "react-dom";
 import { BrowserRouter, Route } from 'react-router-dom'
 import {browserHistory} from 'react-router';
 import "./../css/index.css"
-
 import $ from 'jquery';
 import auth0 from 'auth0-js';
 
@@ -12,6 +11,20 @@ const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
 const AUTH0_CALLBACK_URL = "http://localhost:8080";
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
+
+
+
+
+export default function Level({ clientID }) {
+	return (
+		<Query query={GET_LEVEL} variables = {{ clientID }}>
+			{({ data, loading, error }) => {
+				if (loading)	return <Loading />;
+				if (error)	return (<p>Error : {error.message} </p>)
+			}}
+		</Query>
+	);
+}
 
 // to do
 // immortal db for emails
@@ -61,13 +74,13 @@ class App extends React.Component {
 	    this.parseHash();
 	    this.setState();
 	  }
-
-	render() {
+	 renderBody()
+	 {
 		if (this.loggedIn)
 			return (<div><nav>
     		<a href="/rules/" onClick=""><div className="nav-links">Rules</div></a>
     		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
-			<a href="/" onClick=""><div className="nav-links">C R Y P T E X</div></a>
+			<a href="/" onClick=""><div id="nav-links-main">C R Y P T E X</div></a>
     		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
     		<a href="/about/"><div className="nav-links">About Us</div></a>
     		<div className = "bar"></div>
@@ -85,6 +98,9 @@ class App extends React.Component {
     			<Home />
 			</div>
     	);
+	 }
+	render() {
+		return this.loggedIn==undefined ? (<div className="loader"></div>) : this.renderBody() ;
 	}
 }
 class LoggedIn extends React.Component 
@@ -92,10 +108,7 @@ class LoggedIn extends React.Component
 	constructor(props)
 	{
 		super(props);
-		this.state = {value: ""};
-		// this.url = "/retrievelevel/"+JSON.parse(localStorage.getItem("email")).email;
-		this.url = "https://opinionated-quotes-api.gigalixirapp.com/v1/quotes";
-		this.level = -1 ;
+		this.state={value: "", level:"", clientSecret:""};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
@@ -106,17 +119,46 @@ class LoggedIn extends React.Component
 	handleSubmit(event)
 	{
 		event.preventDefault();
-		var loginUrl = "/adduser/"+JSON.parse(localStorage.getItem("email")).email+"/"+this.state.value ;
-		fetch(loginUrl).then();
+		let url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+		fetch(url).then(response => response.json())
+		.then(result => {
+			if (result.data.doesUsernameExist == true)
+			{
+				alert("That username exists");
+			}
+			else
+			{
+				var loginUrl = "/adduser/"+JSON.parse(localStorage.getItem("email")).email+"/"+this.state.value+"/"+localStorage.getItem("id_token");
+				fetch(loginUrl).then();
+			}
+		});
+	}
+	componentDidMount() {
+		let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
+		fetch(url)
+		.then(response => response.json())
+		.then(result => {
+			this.setState({level: result.data.level});
+		});
+	}
+	renderUsername()
+	{
+		return(
+			<div class="username-form">
+				<p>You are logged in, {JSON.parse(localStorage.getItem("email")).email}. </p>
+				<p>Give us a username.</p>
+				<form onSubmit={this.handleSubmit}>
+					<input type="name" class="username" value={this.state.value} onChange={this.handleChange}/>
+					<br /><br />
+					<input type="submit" class="username-button" value="Submit" />
+				</form>
+			</div>
+		);
 	}
 	render() 
 	{
-		fetch("https://opinionated-quotes-api.gigalixirapp.com/v1/quotes").then(
-			result => {
-				console.log(result.text());
-			}
-		);
-		return(<p>{this.level}</p>);
+		const level = this.state.level ;
+		return level ? this.renderUsername() :(<div className="loader"></div>);
 	}
 }
 class Home extends React.Component {
@@ -148,6 +190,26 @@ class Home extends React.Component {
 class Callback extends React.Component {
 	render() {
 		return(<h1>Loading</h1>);
+	}
+}
+class User {
+	constructor(level, clientSecret, username)
+	{
+		this.level = level ;
+		this.clientSecret = clientSecret ;
+		this.username = username ;
+	}
+	getLevel()
+	{
+		return(this.level);
+	}
+	getClientSecret()
+	{
+		return(this.clientSecret);
+	}
+	getUsername()
+	{
+		return(this.username);
 	}
 }
 

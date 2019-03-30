@@ -2,9 +2,12 @@
 package main    
 import (
     "encoding/json"
+    "crypto/rand"
     "io"
     "compress/gzip"
     "time"
+    "github.com/graphql-go/graphql"
+    // "github.com/graphql-go/handler"
     "go.mongodb.org/mongo-driver/mongo/options"
     "go.mongodb.org/mongo-driver/bson"
     "context"
@@ -15,8 +18,8 @@ import (
     // "log"
     "os"
     "github.com/gorilla/handlers"
-    "github.com/codegangsta/negroni"
-    "github.com/auth0/go-jwt-middleware"
+    // "github.com/codegangsta/negroni"
+    // "github.com/auth0/go-jwt-middleware"
     "github.com/dgrijalva/jwt-go"
     "github.com/gorilla/mux"
     "go.mongodb.org/mongo-driver/mongo"
@@ -50,50 +53,137 @@ type user struct {
 // var client, err = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
 // var collection = client.Database("cryptex").Collection("users")
 
-
 func main() {
     fmt.Println("Server started... ")
     fmt.Println("To do : Protect all endpoints with JWT Auth")
-    jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options {
-        ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
-            // Verify 'aud' claim
-            aud := "https://cryptex2020.auth0.com/api/v2/"
-            checkAud := token.Claims.(jwt.MapClaims).VerifyAudience(aud, false)
-            if !checkAud {
-                return token, errors.New("Invalid audience.")
-            }
-            // Verify 'iss' claim
-            iss := "https://cryptex2020.auth0.com/"
-            checkIss := token.Claims.(jwt.MapClaims).VerifyIssuer(iss, false)
-            if !checkIss {
-                return token, errors.New("Invalid issuer.")
-            }
+    fmt.Println("Change level type to int. It's string rn. ")
+    // jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options {
+    //     ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
+    //         // Verify 'aud' claim
+    //         aud := "https://cryptex2020.auth0.com/api/v2/"
+    //         checkAud := token.Claims.(jwt.MapClaims).VerifyAudience(aud, false)
+    //         if !checkAud {
+    //             return token, errors.New("Invalid audience.")
+    //         }
+    //         // Verify 'iss' claim
+    //         iss := "https://cryptex2020.auth0.com/"
+    //         checkIss := token.Claims.(jwt.MapClaims).VerifyIssuer(iss, false)
+    //         if !checkIss {
+    //             return token, errors.New("Invalid issuer.")
+    //         }
 
-            cert, err := getPemCert(token)
-            if err != nil {
-                panic(err.Error())
-            }
+    //         cert, err := getPemCert(token)
+    //         if err != nil {
+    //             panic(err.Error())
+    //         }
 
-            result, _ := jwt.ParseRSAPublicKeyFromPEM([]byte(cert))
-            return result, nil
-        },
-        SigningMethod: jwt.SigningMethodRS256,
-    })
+    //         result, _ := jwt.ParseRSAPublicKeyFromPEM([]byte(cert))
+    //         return result, nil
+    //     },
+    //     SigningMethod: jwt.SigningMethodRS256,
+    // })
     router := mux.NewRouter()
 
     router.Handle("/", http.FileServer(http.Dir("./dist/")))
-   // router.Handle("/callback", http.ServeFile())
+    // router.Handle("/callback", http.ServeFile())
     // Without JWT middleware check
     // router.Handle("/things", ThingsHandler).Methods("GET")
-    router.HandleFunc("/adduser/{ID}/{username}", AddUser)
-    router.HandleFunc("/retrievelevel/{ID}", RetrieveLevel)
 
-    router.Handle("/api/private", negroni.New(
-        negroni.HandlerFunc(jwtMiddleware.HandlerWithNext),
-        negroni.Wrap(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-            message := "Hello from a private endpoint! You need to be authenticated to see this."
-            responseJSON(message, w, http.StatusOK)
-    }))))
+    // ALL API CALLS (GraphQL) are defined here
+
+    router.HandleFunc("/adduser/{ID}/{username}/{secret}", AddUser)
+    // Define GraphQL User Type :
+    // userType := graphql.NewObject(graphql.ObjectConfig{
+    //     Name: "User", 
+    //     Fields : graphql.Fields{
+    //         "clientID":&graphql.Field{
+    //             Type: graphql.String,
+    //         },
+    //         "username":&graphql.Field{
+    //             Type: graphql.String,
+    //         },
+    //         "level":&graphql.Field{
+    //             Type: graphql.Int,
+    //         },
+    //     },
+    // })
+    // Define GraphQL Root Query : (Every field in this RootQuery represents a possible query)
+    rootQuery := graphql.NewObject(graphql.ObjectConfig{
+        Name: "Query",
+        Fields: graphql.Fields{
+            "level":&graphql.Field{
+                Type: graphql.String,
+                Args: graphql.FieldConfigArgument {
+                    "clientID": &graphql.ArgumentConfig {
+                        Type: graphql.String,
+                    },
+                },
+                Resolve: func(p graphql.ResolveParams) (interface {}, error) {
+                    // MongoDB Initial Code
+                    client, _ := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+                    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+                    _ = client.Connect(ctx)
+                    collection := client.Database("Cryptex").Collection("users")
+                    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+                    // Querying for the right user
+                    filter := bson.M{"clientID" : p.Args["clientID"].(string)}
+                    var result map[string]interface{}
+                    _ = collection.FindOne(ctx, filter).Decode(&result)
+                    // Returning the level of the queried user
+                    if result["level"] == nil {
+                        return "-2", nil
+                    }
+                    return result["level"], nil
+                },
+            },
+            "doesUsernameExist":&graphql.Field{
+                Type: graphql.Boolean,
+                Args: graphql.FieldConfigArgument {
+                    "username":&graphql.ArgumentConfig {
+                        Type: graphql.String,
+                    },
+                },
+                Resolve: func(p graphql.ResolveParams) (interface {}, error) {
+                    // MongoDB Initial Code
+                    client, _ := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+                    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+                    _ = client.Connect(ctx)
+                    collection := client.Database("Cryptex").Collection("users")
+                    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+                    // Querying for the right user
+                    filter := bson.M{"username" : p.Args["username"].(string)}
+                    var result map[string]interface{}
+                    _ = collection.FindOne(ctx, filter).Decode(&result)
+                    // Returning the level of the queried user
+                    if result["level"] == nil {
+                        return false, nil
+                    }
+                    return true, nil
+                },
+            },
+        },
+    })
+    // Create schema with Root Query and Mutator
+    var schema, _ = graphql.NewSchema(
+        graphql.SchemaConfig{
+            Query: rootQuery,
+        },
+    )
+
+
+
+    router.HandleFunc("/graphql", func(w http.ResponseWriter, r *http.Request) {
+        result := executeQuery(r.URL.Query().Get("query"), schema)
+        json.NewEncoder(w).Encode(result)
+    })
+    // END OF BLOCK DEFINING API CALLS
+
+    // router.Handle("/api/private", negroni.New(
+    //     negroni.HandlerFunc(jwtMiddleware.HandlerWithNext),
+    //     negroni.Wrap(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    //         message := "Hello from a private endpoint! You need to be authenticated to see this."
+    //         responseJSON(message, w, http.StatusOK)
+    // }))))
 
     // Not necessary when wired up to Auth0 to get tokens
     // router.Handle("/get-token", GetTokenHandler).Methods("GET")
@@ -192,6 +282,7 @@ func String(n int32) string {
     }
 }
 func responseJSON(message string, w http.ResponseWriter, statusCode int) {
+    enableCors(&w);
     response := Response{message}
 
     jsonResponse, err := json.Marshal(response)
@@ -217,30 +308,44 @@ func AddUser(w http.ResponseWriter, request *http.Request) {
     JSOND, err := json.Marshal(find.Next(ctx))
     UserStatus := string(JSOND)
     if strings.Compare(UserStatus, "false") == 0 {
-        res, err := collection.InsertOne(ctx, bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -2})
+        a := tokenGenerator()
+        res, _ := collection.InsertOne(ctx, bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -2, "secret": vars["secret"]})
         fmt.Println("Added a new user to MongoDB")
         fmt.Println("MongoDB ID ")
         fmt.Println(res.InsertedID)
-        fmt.Println(err)
+        fmt.Println(a)
     }
 }
-func RetrieveLevel(w http.ResponseWriter, request *http.Request) {
-    vars := mux.Vars(request)
-    client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
-    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-    err = client.Connect(ctx)
-    fmt.Println(err)
-    collection := client.Database("Cryptex").Collection("users")
-    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
-    filter := bson.M{"clientID" : vars["ID"]}
-    var result map[string]interface{}
-    err = collection.FindOne(ctx, filter).Decode(&result)
-    if (result["level"] == nil){
-        fmt.Println("if")
-        responseJSON(String(int32(-2)), w, http.StatusOK)
-    } else {
-        fmt.Println("else")
-        integer := result["level"].(int32)
-        responseJSON(String(integer), w, http.StatusOK)
+// Function is obsoelete, implemented using GraphQL in main()
+// func RetrieveLevel(w http.ResponseWriter, request *http.Request) {
+//     vars := mux.Vars(request)
+//     client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+//     ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+//     err = client.Connect(ctx)
+//     fmt.Println(err)
+//     collection := client.Database("Cryptex").Collection("users")
+//     ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+//     filter := bson.M{"clientID" : vars["ID"]}
+//     var result map[string]interface{}
+//     err = collection.FindOne(ctx, filter).Decode(&result)
+
+// }
+func executeQuery(query string, schema graphql.Schema) *graphql.Result {
+    result := graphql.Do(graphql.Params{
+        Schema:        schema,
+        RequestString: query,
+    })
+    if len(result.Errors) > 0 {
+        fmt.Printf("wrong result, unexpected errors: %v", result.Errors)
     }
+    return result
+}
+// Does not provide any fine tuning. Adjust CORS funciton later. 
+func enableCors(w *http.ResponseWriter) {
+    (*w).Header().Set("Access-Control-Allow-Origin", "*")
+}
+func tokenGenerator() string {
+    b := make([]byte, 4)
+    rand.Read(b)
+    return fmt.Sprintf("%x", b)
 }

@@ -116,5 +116,8 @@ a #nav-links-main {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.rules {
+	color: white;
+}
 
 /*# sourceMappingURL=/app.c3f9f951.css.map */

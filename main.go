@@ -2,7 +2,6 @@
 package main    
 import (
     "encoding/json"
-    "crypto/rand"
     "io"
     "compress/gzip"
     "time"
@@ -161,6 +160,14 @@ func main() {
                     return true, nil
                 },
             },
+            "level1":&graphql.Field{
+                Type: graphql.String,
+                Args: graphql.FieldConfigArgument{
+                    "ID":&graphql.ArgumentConfig{
+                        Type: graphql.String,                  
+                    },
+                },
+            },
         },
     })
     // Create schema with Root Query and Mutator
@@ -169,8 +176,6 @@ func main() {
             Query: rootQuery,
         },
     )
-
-
 
     router.HandleFunc("/graphql", func(w http.ResponseWriter, r *http.Request) {
         result := executeQuery(r.URL.Query().Get("query"), schema)
@@ -308,14 +313,21 @@ func AddUser(w http.ResponseWriter, request *http.Request) {
     JSOND, err := json.Marshal(find.Next(ctx))
     UserStatus := string(JSOND)
     if strings.Compare(UserStatus, "false") == 0 {
-        a := tokenGenerator()
-        res, _ := collection.InsertOne(ctx, bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -2, "secret": vars["secret"]})
+        res, _ := collection.InsertOne(ctx, bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378]})
         fmt.Println("Added a new user to MongoDB")
         fmt.Println("MongoDB ID ")
         fmt.Println(res.InsertedID)
-        fmt.Println(a)
     }
 }
+// func submitAnswer(w http.ResponseWriter, request *http.Request) {
+//     vars := mux.Vars(request)
+//     client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+//     ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+//     _ = client.Connect(ctx)
+//     collection := client.Database("Cryptex").Collection("users")
+//     ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+    
+// }
 // Function is obsoelete, implemented using GraphQL in main()
 // func RetrieveLevel(w http.ResponseWriter, request *http.Request) {
 //     vars := mux.Vars(request)
@@ -343,9 +355,4 @@ func executeQuery(query string, schema graphql.Schema) *graphql.Result {
 // Does not provide any fine tuning. Adjust CORS funciton later. 
 func enableCors(w *http.ResponseWriter) {
     (*w).Header().Set("Access-Control-Allow-Origin", "*")
-}
-func tokenGenerator() string {
-    b := make([]byte, 4)
-    rand.Read(b)
-    return fmt.Sprintf("%x", b)
 }

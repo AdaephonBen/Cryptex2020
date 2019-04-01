@@ -45609,10 +45609,11 @@ function (_React$Component2) {
     _this.state = {
       value: "",
       level: "",
-      clientSecret: ""
+      client: {}
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    _this.fetchLevel = _this.fetchLevel.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -45637,13 +45638,23 @@ function (_React$Component2) {
           alert("That username exists");
         } else {
           var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this2.state.value + "/" + localStorage.getItem("id_token");
-          fetch(loginUrl).then();
+          fetch(loginUrl).then(function () {
+            var user = new User(_this2.state.level, localStorage.getItem("id_token"), _this2.state.value);
+
+            _this2.setState({
+              client: user
+            });
+
+            var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
+
+            _this2.fetchLevel();
+          });
         }
       });
     }
   }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
+    key: "fetchLevel",
+    value: function fetchLevel() {
       var _this3 = this;
 
       var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
@@ -45654,6 +45665,11 @@ function (_React$Component2) {
           level: result.data.level
         });
       });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.fetchLevel();
     }
   }, {
     key: "renderUsername",
@@ -45674,12 +45690,36 @@ function (_React$Component2) {
       })));
     }
   }, {
+    key: "renderRules",
+    value: function renderRules() {
+      return _react.default.createElement("div", {
+        className: "rules-container"
+      }, _react.default.createElement("h1", {
+        className: "rules"
+      }, "Rules Shit Here"), _react.default.createElement("button", {
+        className: "accept-rules"
+      }, "I accept all this shi"));
+    }
+  }, {
     key: "render",
     value: function render() {
       var level = this.state.level;
-      return level ? this.renderUsername() : _react.default.createElement("div", {
-        className: "loader"
-      });
+
+      if (level) {
+        switch (level) {
+          case "-2":
+            return this.renderUsername();
+            break;
+
+          case "-1":
+            return this.renderRules();
+            break;
+        }
+      } else {
+        return _react.default.createElement("div", {
+          className: "loader"
+        });
+      }
     }
   }]);
 
@@ -45814,7 +45854,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33861" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40243" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -12,9 +12,6 @@ const AUTH0_DOMAIN = "cryptex2020.auth0.com";
 const AUTH0_CALLBACK_URL = "http://localhost:8080";
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
-
-
-
 export default function Level({ clientID }) {
 	return (
 		<Query query={GET_LEVEL} variables = {{ clientID }}>
@@ -108,9 +105,10 @@ class LoggedIn extends React.Component
 	constructor(props)
 	{
 		super(props);
-		this.state={value: "", level:"", clientSecret:""};
+		this.state={value: "", level:"", client:{}};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.fetchLevel = this.fetchLevel.bind(this);
 	}
 	handleChange(event)
 	{
@@ -129,17 +127,26 @@ class LoggedIn extends React.Component
 			else
 			{
 				var loginUrl = "/adduser/"+JSON.parse(localStorage.getItem("email")).email+"/"+this.state.value+"/"+localStorage.getItem("id_token");
-				fetch(loginUrl).then();
+				fetch(loginUrl).then(() => {
+					let user = new User(this.state.level, localStorage.getItem("id_token"), this.state.value);
+					this.setState({client: user});
+					let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
+					this.fetchLevel();
+				});
 			}
 		});
 	}
-	componentDidMount() {
+	fetchLevel()
+	{
 		let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
 		fetch(url)
 		.then(response => response.json())
 		.then(result => {
 			this.setState({level: result.data.level});
 		});
+	}
+	componentDidMount() {
+		this.fetchLevel();
 	}
 	renderUsername()
 	{
@@ -155,10 +162,34 @@ class LoggedIn extends React.Component
 			</div>
 		);
 	}
+	renderRules()
+	{
+		return(
+			<div className="rules-container">
+				<h1 className = "rules">Rules Shit Here</h1>
+				<button className="accept-rules">I accept all this shi</button>
+			</div>
+		);
+	}
 	render() 
 	{
 		const level = this.state.level ;
-		return level ? this.renderUsername() :(<div className="loader"></div>);
+		if (level)
+		{
+			switch(level)
+			{
+				case "-2":
+					return(this.renderUsername());
+					break;
+				case "-1":
+					return(this.renderRules());
+					break;
+			}
+		}
+		else
+		{
+			return(<div className="loader"></div>);
+		}
 	}
 }
 class Home extends React.Component {

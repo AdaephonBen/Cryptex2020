@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AdaephonBen/Cryptex2020#readme",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "apollo-boost": "^0.3.1",
     "auth0-js": "^9.10.0",
     "bulma": "^0.7.4",
@@ -27,7 +28,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-skeleton-css": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -1,8 +1,7 @@
 import React from "react";
+import image from './../07.png' 
 import ReactDOM from "react-dom";
 import { render } from "react-dom";
-import { BrowserRouter, Route } from 'react-router-dom'
-import {browserHistory} from 'react-router';
 import "./../css/index.css"
 import $ from 'jquery';
 import auth0 from 'auth0-js';
@@ -23,6 +22,32 @@ export default function Level({ clientID }) {
 	);
 }
 
+		// <div className="navbar" id="mainNavBar">
+		// 	<div className="container">
+		// 	<div className="row">
+		// 	<div className="two columns"><a><div className="nav-links">Rules</div></a></div>
+  //   		<div className="two columns"><a><div className="nav-links">Cryptex 2019</div></a></div>
+		// 	<div className="two columns"><a><div id="nav-links-main">C R Y P T E X</div></a></div>
+  //   		<div className="two columns"><a><div className="nav-links">Sponsors</div></a></div>
+  //   		<div className="three columns"><a><div className="nav-links">About Us</div></a></div>
+  //   		</div>
+  //   		</div>
+		// </div>
+class Navbar extends React.Component {
+	render() {
+		return(
+			<nav class="animated fadeInDown">
+				<ul>
+					<li>Rules</li>
+					<li>Cryptex 2019</li>
+					<li className="main animated flipInX">C R Y P T E X</li>
+					<li>Sponsors</li>
+					<li>About Us</li>
+				</ul>
+			</nav>
+		);
+	}
+}
 // to do
 // immortal db for emails
 
@@ -74,24 +99,11 @@ class App extends React.Component {
 	 renderBody()
 	 {
 		if (this.loggedIn)
-			return (<div><nav>
-    		<a href="/rules/" onClick=""><div className="nav-links">Rules</div></a>
-    		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
-			<a href="/" onClick=""><div id="nav-links-main">C R Y P T E X</div></a>
-    		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
-    		<a href="/about/"><div className="nav-links">About Us</div></a>
-    		<div className = "bar"></div>
-    	</nav> <LoggedIn /> </div> );
+			return (<div> <Navbar /> <LoggedIn /> </div> );
 		else
 			return (
 			<div>	
-				<nav>
-		    		<a href="/rules/" onClick=""><div className="nav-links">Rules</div></a>
-		    		<a href="/crypt2019/"><div className="nav-links">Cryptex 2019</div></a>
-					<a href="/" onClick=""><div id="nav-links-main">C R Y P T E X</div></a>
-		    		<a href="/sponsors"><div className="nav-links">Sponsors</div></a>
-		    		<a href="/about/"><div className="nav-links">About Us</div></a>
-    			</nav>
+				<Navbar />
     			<Home />
 			</div>
     	);
@@ -148,29 +160,6 @@ class LoggedIn extends React.Component
 	componentDidMount() {
 		this.fetchLevel();
 	}
-	renderUsername()
-	{
-		return(
-			<div class="username-form">
-				<p>You are logged in, {JSON.parse(localStorage.getItem("email")).email}. </p>
-				<p>Give us a username.</p>
-				<form onSubmit={this.handleSubmit}>
-					<input type="name" class="username" value={this.state.value} onChange={this.handleChange}/>
-					<br /><br />
-					<input type="submit" class="username-button" value="Submit" />
-				</form>
-			</div>
-		);
-	}
-	renderRules()
-	{
-		return(
-			<div className="rules-container">
-				<h1 className = "rules">Rules Shit Here</h1>
-				<button className="accept-rules">I accept all this shi</button>
-			</div>
-		);
-	}
 	render() 
 	{
 		const level = this.state.level ;
@@ -179,10 +168,10 @@ class LoggedIn extends React.Component
 			switch(level)
 			{
 				case "-2":
-					return(this.renderUsername());
+					return(<LevelUsername />);
 					break;
 				case "-1":
-					return(this.renderRules());
+					return(<LevelRules />);
 					break;
 			}
 		}
@@ -192,6 +181,30 @@ class LoggedIn extends React.Component
 		}
 	}
 }
+
+class LevelUsername extends React.Component {
+	render() {
+		<div className="username-form">
+				<p>You are logged in, {JSON.parse(localStorage.getItem("email")).email}. </p>
+				<p>Give us a username.</p>
+				<form onSubmit={this.handleSubmit}>
+					<input type="name" className="username" value={this.state.value} onChange={this.handleChange}/>
+					<br /><br />
+					<input type="submit" className="username-button" value="Submit" />
+				</form>
+			</div>
+	}
+}
+
+class LevelRules extends React.Component {
+	render() {
+		<div className="rules-container">
+			<h1 className = "rules">Rules Shit Here</h1>
+			<button className="accept-rules">I accept all this shi</button>
+		</div>
+	}
+}
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -212,7 +225,13 @@ class Home extends React.Component {
   render() {
     return (
     	<div>
+    	<br />
+    	<div class="jumbotron animated fadeIn">
+    	<img src={image} />
+    	<p class="jumbotron-heading animated fadeIn">CRYPTEX 2020</p>
+    	<p class="jumbotron-subtitle">Design so beautiful, it will make your heart melt. </p>
     	<button className="DiveInButton" onClick={this.authenticate}><div className="transform">D I V E &nbsp; I N</div></button>
+    	</div>
     	</div>
     	);
   }

@@ -8,7 +8,7 @@ import auth0 from 'auth0-js';
 
 const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
-const AUTH0_CALLBACK_URL = "http://localhost:8080";
+const AUTH0_CALLBACK_URL = "http://138.68.84.94:8080";
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 export default function Level({ clientID }) {
@@ -38,12 +38,26 @@ class Navbar extends React.Component {
 		return(
 			<nav class="animated fadeInDown">
 				<ul>
-					<li>Rules</li>
+					<li className="leftnav">Rules</li>
 					<li>Cryptex 2019</li>
-					<li className="main animated flipInX">C R Y P T E X</li>
+					<li className="main animated flipInX">cryptex</li>
 					<li>Sponsors</li>
-					<li>About Us</li>
+					<li className="rightnav">About Us</li>
+
+					<div className="burger">
+						<div className="line1"></div>
+						<div className="line2"></div>
+						<div className="line3"></div>
+					</div>
 				</ul>
+				<div class="responsive">
+					<ul>
+						<li className="leftnav">Rules</li>
+						<li>Cryptex 2019</li>
+						<li>Sponsors</li>
+						<li className="rightnav">About Us</li>
+					</ul>
+				</div>
 			</nav>
 		);
 	}
@@ -126,28 +140,7 @@ class LoggedIn extends React.Component
 	{
 		this.setState({value : event.target.value});
 	}
-	handleSubmit(event)
-	{
-		event.preventDefault();
-		let url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
-		fetch(url).then(response => response.json())
-		.then(result => {
-			if (result.data.doesUsernameExist == true)
-			{
-				alert("That username exists");
-			}
-			else
-			{
-				var loginUrl = "/adduser/"+JSON.parse(localStorage.getItem("email")).email+"/"+this.state.value+"/"+localStorage.getItem("id_token");
-				fetch(loginUrl).then(() => {
-					let user = new User(this.state.level, localStorage.getItem("id_token"), this.state.value);
-					this.setState({client: user});
-					let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
-					this.fetchLevel();
-				});
-			}
-		});
-	}
+	
 	fetchLevel()
 	{
 		let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
@@ -183,6 +176,7 @@ class LoggedIn extends React.Component
 }
 
 class LevelUsername extends React.Component {
+	
 	render() {
 		<div className="username-form">
 				<p>You are logged in, {JSON.parse(localStorage.getItem("email")).email}. </p>

@@ -40483,7 +40483,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
-var AUTH0_CALLBACK_URL = "http://localhost:8080";
+var AUTH0_CALLBACK_URL = "http://138.68.84.94:8080";
 var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 function Level(_ref) {
@@ -40529,9 +40529,27 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("nav", {
         "class": "animated fadeInDown"
-      }, _react.default.createElement("ul", null, _react.default.createElement("li", null, "Rules"), _react.default.createElement("li", null, "Cryptex 2019"), _react.default.createElement("li", {
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
+        className: "leftnav"
+      }, "Rules"), _react.default.createElement("li", null, "Cryptex 2019"), _react.default.createElement("li", {
         className: "main animated flipInX"
-      }, "C R Y P T E X"), _react.default.createElement("li", null, "Sponsors"), _react.default.createElement("li", null, "About Us")));
+      }, "cryptex"), _react.default.createElement("li", null, "Sponsors"), _react.default.createElement("li", {
+        className: "rightnav"
+      }, "About Us"), _react.default.createElement("div", {
+        className: "burger"
+      }, _react.default.createElement("div", {
+        className: "line1"
+      }), _react.default.createElement("div", {
+        className: "line2"
+      }), _react.default.createElement("div", {
+        className: "line3"
+      }))), _react.default.createElement("div", {
+        "class": "responsive"
+      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
+        className: "leftnav"
+      }, "Rules"), _react.default.createElement("li", null, "Cryptex 2019"), _react.default.createElement("li", null, "Sponsors"), _react.default.createElement("li", {
+        className: "rightnav"
+      }, "About Us"))));
     }
   }]);
 
@@ -40647,43 +40665,15 @@ function (_React$Component3) {
       });
     }
   }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      var _this2 = this;
-
-      event.preventDefault();
-      var url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
-      fetch(url).then(function (response) {
-        return response.json();
-      }).then(function (result) {
-        if (result.data.doesUsernameExist == true) {
-          alert("That username exists");
-        } else {
-          var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this2.state.value + "/" + localStorage.getItem("id_token");
-          fetch(loginUrl).then(function () {
-            var user = new User(_this2.state.level, localStorage.getItem("id_token"), _this2.state.value);
-
-            _this2.setState({
-              client: user
-            });
-
-            var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
-
-            _this2.fetchLevel();
-          });
-        }
-      });
-    }
-  }, {
     key: "fetchLevel",
     value: function fetchLevel() {
-      var _this3 = this;
+      var _this2 = this;
 
       var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
-        _this3.setState({
+        _this2.setState({
           level: result.data.level
         });
       });
@@ -40786,13 +40776,13 @@ function (_React$Component6) {
   _inherits(Home, _React$Component6);
 
   function Home(props) {
-    var _this4;
+    var _this3;
 
     _classCallCheck(this, Home);
 
-    _this4 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
-    _this4.authenticate = _this4.authenticate.bind(_assertThisInitialized(_this4));
-    return _this4;
+    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this3.authenticate = _this3.authenticate.bind(_assertThisInitialized(_this3));
+    return _this3;
   }
 
   _createClass(Home, [{
@@ -40916,7 +40906,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43389" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39849" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

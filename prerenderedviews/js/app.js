@@ -143,7 +143,7 @@ class LoggedIn extends React.Component
 	
 	fetchLevel()
 	{
-		let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
+		let url = "http://138.68.84.94:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
 		fetch(url)
 		.then(response => response.json())
 		.then(result => {

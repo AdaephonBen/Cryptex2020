@@ -40669,7 +40669,7 @@ function (_React$Component3) {
     value: function fetchLevel() {
       var _this2 = this;
 
-      var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
+      var url = "http://138.68.84.94:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40906,7 +40906,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46627" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43585" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

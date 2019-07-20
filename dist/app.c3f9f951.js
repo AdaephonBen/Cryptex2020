@@ -40483,7 +40483,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
-var AUTH0_CALLBACK_URL = "http://138.68.84.94:8080";
+var AUTH0_CALLBACK_URL = "http://localhost:8080";
 var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 function Level(_ref) {
@@ -40554,9 +40554,7 @@ function (_React$Component) {
   }]);
 
   return Navbar;
-}(_react.default.Component); // to do
-// immortal db for emails
-
+}(_react.default.Component);
 
 var App =
 /*#__PURE__*/
@@ -40652,7 +40650,6 @@ function (_React$Component3) {
       client: {}
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     _this.fetchLevel = _this.fetchLevel.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -40669,7 +40666,7 @@ function (_React$Component3) {
     value: function fetchLevel() {
       var _this2 = this;
 
-      var url = "http://138.68.84.94:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
+      var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40714,16 +40711,51 @@ var LevelUsername =
 function (_React$Component4) {
   _inherits(LevelUsername, _React$Component4);
 
-  function LevelUsername() {
+  function LevelUsername(props) {
+    var _this3;
+
     _classCallCheck(this, LevelUsername);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(LevelUsername).apply(this, arguments));
+    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(LevelUsername).call(this, props));
+    _this3.state = {
+      value: ""
+    };
+    _this3.handleChange = _this3.handleChange.bind(_assertThisInitialized(_this3));
+    _this3.handleSubmit = _this3.handleSubmit.bind(_assertThisInitialized(_this3));
+    return _this3;
   }
 
   _createClass(LevelUsername, [{
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      var _this4 = this;
+
+      event.preventDefault();
+      var url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+      fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        if (result.data.doesUsernameExist == true) {
+          alert("That username exists");
+        } else {
+          var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this4.state.value + "/" + localStorage.getItem("id_token");
+          fetch(loginUrl).then(function () {
+            window.location.reload();
+          });
+        }
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      _react.default.createElement("div", {
+      return _react.default.createElement("div", {
         className: "username-form"
       }, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("email")).email, ". "), _react.default.createElement("p", null, "Give us a username."), _react.default.createElement("form", {
         onSubmit: this.handleSubmit
@@ -40748,22 +40780,35 @@ var LevelRules =
 function (_React$Component5) {
   _inherits(LevelRules, _React$Component5);
 
-  function LevelRules() {
+  function LevelRules(props) {
+    var _this5;
+
     _classCallCheck(this, LevelRules);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(LevelRules).apply(this, arguments));
+    _this5 = _possibleConstructorReturn(this, _getPrototypeOf(LevelRules).call(this, props));
+    _this5.handleAccepted = _this5.handleAccepted.bind(_assertThisInitialized(_this5));
+    return _this5;
   }
 
   _createClass(LevelRules, [{
+    key: "handleAccepted",
+    value: function handleAccepted() {
+      var url = "http://localhost:8080/acceptedrules/" + localStorage.getItem("id_token");
+      console.log(url);
+      fetch(url);
+      window.location.reload();
+    }
+  }, {
     key: "render",
     value: function render() {
-      _react.default.createElement("div", {
+      return _react.default.createElement("div", {
         className: "rules-container"
       }, _react.default.createElement("h1", {
         className: "rules"
       }, "Rules Shit Here"), _react.default.createElement("button", {
-        className: "accept-rules"
-      }, "I accept all this shi"));
+        className: "accept-rules",
+        onClick: this.handleAccepted
+      }, "I accept all this shit"));
     }
   }]);
 
@@ -40776,13 +40821,13 @@ function (_React$Component6) {
   _inherits(Home, _React$Component6);
 
   function Home(props) {
-    var _this3;
+    var _this6;
 
     _classCallCheck(this, Home);
 
-    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
-    _this3.authenticate = _this3.authenticate.bind(_assertThisInitialized(_this3));
-    return _this3;
+    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this6.authenticate = _this6.authenticate.bind(_assertThisInitialized(_this6));
+    return _this6;
   }
 
   _createClass(Home, [{
@@ -40906,7 +40951,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43585" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36225" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

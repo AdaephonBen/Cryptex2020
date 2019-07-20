@@ -1,10 +1,10 @@
 
 package main    
 import (
+    // "strconv"
     "encoding/json"
     "io"
     "compress/gzip"
-    "time"
     "github.com/graphql-go/graphql"
     // "github.com/graphql-go/handler"
     "go.mongodb.org/mongo-driver/mongo/options"
@@ -14,7 +14,7 @@ import (
     "net/http"
     "strings"
     "errors"
-    // "log"
+    "log"
     "os"
     "github.com/gorilla/handlers"
     // "github.com/codegangsta/negroni"
@@ -48,14 +48,62 @@ type user struct {
     level int `json:"level"`
 }
 
-// var ctx, _ = context.WithTimeout(context.Background(), 10*time.Second)
-// var client, err = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
+var answers map[string]string
+
+
+// var context.TODO(), _ = context.WithTimeout(context.Background(), 10*time.Second)
+// var client, err = mongo.Connect(context.TODO(), options.Client().ApplyURI("mongodb://localhost:27017"))
 // var collection = client.Database("cryptex").Collection("users")
+
+var collection *mongo.Collection 
 
 func main() {
     fmt.Println("Server started... ")
     fmt.Println("To do : Protect all endpoints with JWT Auth")
     fmt.Println("Change level type to int. It's string rn. ")
+    answers = make(map[string]string)
+    answers["0"] = "cryptex"
+    answers["1"] = "marieantoinette"
+    answers["2"] = "dontpanic"
+    answers["3"] = "ireland"
+    answers["4"] = "groot"
+    answers["5"] = "fcuk"
+    answers["6"] = "beatles"
+    answers["7"] = "bananaequivalentdose"
+    answers["8"] = "alzheimersgroup"
+    answers["9"] = "stanlee"
+    answers["10"] = "pabloescobar"
+    answers["11"] = "absolut"
+    answers["12"] = "triskaidekaphobia"
+    answers["13"] = "philipshue"
+    answers["14"] = "motugi"
+    answers["15"] = "12648430"
+    answers["16"] = "undefined0011232354"
+    answers["17"] = "quadratumlatinum"
+    answers["18"] = "dancingmen"
+    answers["19"] = "nerdfameagain"
+    answers["20"] = "buckinghampalace"
+    answers["21"] = "fortytwo"
+    answers["22"] = "markhamill"
+    answers["23"] = "ladystardust"
+    answers["24"] = "oaktoys"
+    answers["25"] = "imaginativeness"
+    answers["26"] = "502286"
+    answers["27"] = "ursaminor"
+    // Set client options
+    clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+    // Connect to MongoDB
+    client, err := mongo.Connect(context.TODO(), clientOptions)
+    if err != nil {
+        log.Fatal(err)
+    }
+    // Check the connection
+    err = client.Ping(context.TODO(), nil)
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Println("Connected to MongoDB!")
+    collection = client.Database("Cryptex").Collection("users")
     // jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options {
     //     ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
     //         // Verify 'aud' claim
@@ -91,6 +139,8 @@ func main() {
     // ALL API CALLS (GraphQL) are defined here
 
     router.HandleFunc("/adduser/{ID}/{username}/{secret}", AddUser)
+    router.HandleFunc("/acceptedrules/{secret}", AcceptedRules)
+    router.HandleFunc("/answer/{secret}/{level}/{answer}", AnswerQuestion)
     // Define GraphQL User Type :
     // userType := graphql.NewObject(graphql.ObjectConfig{
     //     Name: "User", 
@@ -118,16 +168,10 @@ func main() {
                     },
                 },
                 Resolve: func(p graphql.ResolveParams) (interface {}, error) {
-                    // MongoDB Initial Code
-                    client, _ := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
-                    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-                    _ = client.Connect(ctx)
-                    collection := client.Database("Cryptex").Collection("users")
-                    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
                     // Querying for the right user
                     filter := bson.M{"clientID" : p.Args["clientID"].(string)}
                     var result map[string]interface{}
-                    _ = collection.FindOne(ctx, filter).Decode(&result)
+                    _ = collection.FindOne(context.TODO(), filter).Decode(&result)
                     // Returning the level of the queried user
                     if result["level"] == nil {
                         return "-2", nil
@@ -143,16 +187,10 @@ func main() {
                     },
                 },
                 Resolve: func(p graphql.ResolveParams) (interface {}, error) {
-                    // MongoDB Initial Code
-                    client, _ := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
-                    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-                    _ = client.Connect(ctx)
-                    collection := client.Database("Cryptex").Collection("users")
-                    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
                     // Querying for the right user
                     filter := bson.M{"username" : p.Args["username"].(string)}
                     var result map[string]interface{}
-                    _ = collection.FindOne(ctx, filter).Decode(&result)
+                    _ = collection.FindOne(context.TODO(), filter).Decode(&result)
                     // Returning the level of the queried user
                     if result["level"] == nil {
                         return false, nil
@@ -231,8 +269,8 @@ func gzipHandler(h http.Handler) http.Handler {
 //     secret := vars["secret"]
 //     username := vars["username"]
 //     fmt.Println(secret + " : " + username)
-//     ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
-//     res, err := collection.InsertOne(ctx, bson.M{"secret": secret, "username": username, "level": -1})
+//     context.TODO(), _ = context.WithTimeout(context.Background(), 5*time.Second)
+//     res, err := collection.InsertOne(context.TODO(), bson.M{"secret": secret, "username": username, "level": -1})
 //     id := res.InsertedID
 //     fmt.Println(id)
 //     fmt.Println(err)
@@ -302,44 +340,63 @@ func responseJSON(message string, w http.ResponseWriter, statusCode int) {
 }
 func AddUser(w http.ResponseWriter, request *http.Request) {
     vars := mux.Vars(request)
-    // MongoDB
-    client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
-    ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-    err = client.Connect(ctx)
-    fmt.Println(err)
-    collection := client.Database("Cryptex").Collection("users")
-    ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
-    find, err := collection.Find(ctx, bson.M{"clientID": vars["ID"]})
-    JSOND, err := json.Marshal(find.Next(ctx))
+    find, _ := collection.Find(context.TODO(), bson.M{"clientID": vars["ID"]})
+    JSOND, _ := json.Marshal(find.Next(context.TODO()))
     UserStatus := string(JSOND)
     if strings.Compare(UserStatus, "false") == 0 {
-        res, _ := collection.InsertOne(ctx, bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378]})
+        res, _ := collection.InsertOne(context.TODO(), bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378]})
         fmt.Println("Added a new user to MongoDB")
         fmt.Println("MongoDB ID ")
         fmt.Println(res.InsertedID)
     }
 }
+func AcceptedRules(w http.ResponseWriter, request *http.Request) {
+    vars := mux.Vars(request)
+    fmt.Println(vars["secret"][0:378]);
+    filter := bson.D{{"secret", vars["secret"][0:378]}}
+    update := bson.D{
+        {"$set", bson.D{
+            {"level", 0},
+        }},
+    }
+    _, err := collection.UpdateOne(context.TODO(), filter, update)
+    if err != nil {
+        log.Fatal(err)
+    }
+}
+
+func AnswerQuestion(w http.ResponseWriter, request *http.Request) {
+    fmt.Println("Hello")
+    vars := mux.Vars(request)
+    // filter := bson.D{{"secret", vars["secret"][0:378]}}
+    // currentLevel, _ := strconv.Atoi(vars["level"])
+    // nextLevel := currentLevel+1
+    find, _ := collection.Find(context.TODO(), bson.M{"secret": vars["secret"]})
+    JSOND, _ := json.Marshal(find.Next(context.TODO()))
+    fmt.Println(string(JSOND))
+}
+
 // func submitAnswer(w http.ResponseWriter, request *http.Request) {
 //     vars := mux.Vars(request)
 //     client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
-//     ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-//     _ = client.Connect(ctx)
+//     context.TODO(), _ := context.WithTimeout(context.Background(), 10*time.Second)
+//     _ = client.Connect(context.TODO())
 //     collection := client.Database("Cryptex").Collection("users")
-//     ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+//     context.TODO(), _ = context.WithTimeout(context.Background(), 5*time.Second)
     
 // }
 // Function is obsoelete, implemented using GraphQL in main()
 // func RetrieveLevel(w http.ResponseWriter, request *http.Request) {
 //     vars := mux.Vars(request)
 //     client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
-//     ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-//     err = client.Connect(ctx)
+//     context.TODO(), _ := context.WithTimeout(context.Background(), 10*time.Second)
+//     err = client.Connect(context.TODO())
 //     fmt.Println(err)
 //     collection := client.Database("Cryptex").Collection("users")
-//     ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+//     context.TODO(), _ = context.WithTimeout(context.Background(), 5*time.Second)
 //     filter := bson.M{"clientID" : vars["ID"]}
 //     var result map[string]interface{}
-//     err = collection.FindOne(ctx, filter).Decode(&result)
+//     err = collection.FindOne(context.TODO(), filter).Decode(&result)
 
 // }
 func executeQuery(query string, schema graphql.Schema) *graphql.Result {

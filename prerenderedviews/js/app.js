@@ -8,7 +8,7 @@ import auth0 from 'auth0-js';
 
 const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
-const AUTH0_CALLBACK_URL = "http://138.68.84.94:8080";
+const AUTH0_CALLBACK_URL = "http://localhost:8080";
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 export default function Level({ clientID }) {
@@ -21,6 +21,7 @@ export default function Level({ clientID }) {
 		</Query>
 	);
 }
+
 
 		// <div className="navbar" id="mainNavBar">
 		// 	<div className="container">
@@ -62,8 +63,6 @@ class Navbar extends React.Component {
 		);
 	}
 }
-// to do
-// immortal db for emails
 
 class App extends React.Component {
 	parseHash() {
@@ -133,7 +132,6 @@ class LoggedIn extends React.Component
 		super(props);
 		this.state={value: "", level:"", client:{}};
 		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
 		this.fetchLevel = this.fetchLevel.bind(this);
 	}
 	handleChange(event)
@@ -143,7 +141,7 @@ class LoggedIn extends React.Component
 	
 	fetchLevel()
 	{
-		let url = "http://138.68.84.94:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
+		let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
 		fetch(url)
 		.then(response => response.json())
 		.then(result => {
@@ -176,8 +174,38 @@ class LoggedIn extends React.Component
 }
 
 class LevelUsername extends React.Component {
-	
+	constructor(props)
+	{
+		super(props);
+		this.state={value: ""};
+		this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+	handleChange(event)
+	{
+		this.setState({value : event.target.value});
+	}
+	handleSubmit(event)
+	{
+		event.preventDefault();
+		let url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+		fetch(url).then(response => response.json())
+		.then(result => {
+			if (result.data.doesUsernameExist == true)
+			{
+				alert("That username exists");
+			}
+			else
+			{
+				var loginUrl = "/adduser/"+JSON.parse(localStorage.getItem("email")).email+"/"+this.state.value+"/"+localStorage.getItem("id_token");
+				fetch(loginUrl).then(() => {
+					window.location.reload();
+				});
+			}
+		});
+	}
 	render() {
+		return(
 		<div className="username-form">
 				<p>You are logged in, {JSON.parse(localStorage.getItem("email")).email}. </p>
 				<p>Give us a username.</p>
@@ -187,15 +215,28 @@ class LevelUsername extends React.Component {
 					<input type="submit" className="username-button" value="Submit" />
 				</form>
 			</div>
+		);
 	}
 }
 
 class LevelRules extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleAccepted = this.handleAccepted.bind(this);
+	}
+	handleAccepted() {
+		let url = "http://localhost:8080/acceptedrules/"+(localStorage.getItem("id_token"));
+		console.log(url);
+		fetch(url);
+		window.location.reload();
+	}
 	render() {
+		return(
 		<div className="rules-container">
 			<h1 className = "rules">Rules Shit Here</h1>
-			<button className="accept-rules">I accept all this shi</button>
+			<button className="accept-rules" onClick={this.handleAccepted}>I accept all this shit</button>
 		</div>
+		);
 	}
 }
 

@@ -40530,12 +40530,8 @@ function (_React$Component) {
       return _react.default.createElement("nav", {
         "class": "animated fadeInDown"
       }, _react.default.createElement("ul", null, _react.default.createElement("li", {
-        className: "leftnav"
-      }, "Rules"), _react.default.createElement("li", null, "Cryptex 2019"), _react.default.createElement("li", {
         className: "main animated flipInX"
-      }, "cryptex"), _react.default.createElement("li", null, "Sponsors"), _react.default.createElement("li", {
-        className: "rightnav"
-      }, "About Us"), _react.default.createElement("div", {
+      }, "cryptex"), _react.default.createElement("div", {
         className: "burger"
       }, _react.default.createElement("div", {
         className: "line1"
@@ -40951,7 +40947,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36225" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44875" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

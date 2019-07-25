@@ -39,11 +39,11 @@ class Navbar extends React.Component {
 		return(
 			<nav class="animated fadeInDown">
 				<ul>
-					<li className="leftnav">Rules</li>
-					<li>Cryptex 2019</li>
+					{/* <li className="leftnav">Rules</li> */}
+					{/* <li>Cryptex 2019</li> */}
 					<li className="main animated flipInX">cryptex</li>
-					<li>Sponsors</li>
-					<li className="rightnav">About Us</li>
+					{/* <li>Sponsors</li> */}
+					{/* <li className="rightnav">About Us</li> */}
 
 					<div className="burger">
 						<div className="line1"></div>

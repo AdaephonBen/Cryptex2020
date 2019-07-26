@@ -125,7 +125,7 @@ class LoggedIn extends React.Component {
 	}
 
 	fetchLevel() {
-		let url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
+		let url = "http://iith.dev/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
 		fetch(url)
 			.then(response => response.json())
 			.then(result => {
@@ -203,13 +203,13 @@ class LevelImage extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+		let url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
 		fetch(url).then(() => {
 			window.location.reload();
 		});
 	}
 	componentWillMount() {
-		let url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+		let url = "http://iith.dev/level/" + localStorage.getItem("id_token");
 		fetch(url).then(response => response.json())
 			.then(result => {
 				this.setState({ url: result.URL });
@@ -251,13 +251,13 @@ class LevelText extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+		let url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
 		fetch(url).then(() => {
 			window.location.reload();
 		});
 	}
 	componentWillMount() {
-		let url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+		let url = "http://iith.dev/level/" + localStorage.getItem("id_token");
 		fetch(url).then(response => response.json())
 			.then(result => {
 				this.setState({ url: result.URL });
@@ -315,13 +315,13 @@ class LevelMidi extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+		let url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
 		fetch(url).then(() => {
 			window.location.reload();
 		});
 	}
 	componentWillMount() {
-		let url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+		let url = "http://iith.dev/level/" + localStorage.getItem("id_token");
 		fetch(url).then(response => response.json())
 			.then(result => {
 				this.setState({ url: result.URL });
@@ -363,7 +363,7 @@ class LevelUsername extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+		let url = "http://iith.dev/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
 		fetch(url).then(response => response.json())
 			.then(result => {
 				if (result.data.doesUsernameExist == true) {
@@ -408,7 +408,7 @@ class LevelRules extends React.Component {
 		window.location.reload();
 	}
 	handleAccepted() {
-		let url = "http://localhost:8080/acceptedrules/" + (localStorage.getItem("id_token"));
+		let url = "http://iith.dev/acceptedrules/" + (localStorage.getItem("id_token"));
 		console.log(url);
 		fetch(url);
 		window.location.reload();

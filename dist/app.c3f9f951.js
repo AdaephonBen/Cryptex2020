@@ -40662,7 +40662,7 @@ function (_React$Component3) {
     value: function fetchLevel() {
       var _this2 = this;
 
-      var url = "http://localhost:8080/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
+      var url = "http://iith.dev/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40796,7 +40796,7 @@ function (_React$Component5) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -40806,7 +40806,7 @@ function (_React$Component5) {
     value: function componentWillMount() {
       var _this4 = this;
 
-      var url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+      var url = "http://iith.dev/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40888,7 +40888,7 @@ function (_React$Component6) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -40898,7 +40898,7 @@ function (_React$Component6) {
     value: function componentWillMount() {
       var _this6 = this;
 
-      var url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+      var url = "http://iith.dev/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41008,7 +41008,7 @@ function (_React$Component7) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -41018,7 +41018,7 @@ function (_React$Component7) {
     value: function componentWillMount() {
       var _this8 = this;
 
-      var url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+      var url = "http://iith.dev/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41098,7 +41098,7 @@ function (_React$Component8) {
       var _this10 = this;
 
       event.preventDefault();
-      var url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+      var url = "http://iith.dev/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41163,7 +41163,7 @@ function (_React$Component9) {
   }, {
     key: "handleAccepted",
     value: function handleAccepted() {
-      var url = "http://localhost:8080/acceptedrules/" + localStorage.getItem("id_token");
+      var url = "http://iith.dev/acceptedrules/" + localStorage.getItem("id_token");
       console.log(url);
       fetch(url);
       window.location.reload();

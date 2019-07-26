@@ -137,6 +137,7 @@ func main() {
     router.HandleFunc("/css", CSSHandler)
     router.HandleFunc("/midi.mid", MIDIHandler)
     router.HandleFunc("/rules", RulesHandler)
+    router.HandleFunc("/whichlevel/{clientid}", LevelQueryHandler)
     // Define GraphQL User Type :
     // userType := graphql.NewObject(graphql.ObjectConfig{
     //     Name: "User", 
@@ -156,25 +157,6 @@ func main() {
     rootQuery := graphql.NewObject(graphql.ObjectConfig{
         Name: "Query",
         Fields: graphql.Fields{
-            "level":&graphql.Field{
-                Type: graphql.String,
-                Args: graphql.FieldConfigArgument {
-                    "clientID": &graphql.ArgumentConfig {
-                        Type: graphql.String,
-                    },
-                },
-                Resolve: func(p graphql.ResolveParams) (interface {}, error) {
-                    // Querying for the right user
-                    filter := bson.M{"clientID" : p.Args["clientID"].(string)}
-                    var result map[string]interface{}
-                    _ = collection.FindOne(context.TODO(), filter).Decode(&result)
-                    // Returning the level of the queried user
-                    if result["level"] == nil {
-                        return "-2", nil
-                    }
-                    return result["level"], nil
-                },
-            },
             "doesUsernameExist":&graphql.Field{
                 Type: graphql.Boolean,
                 Args: graphql.FieldConfigArgument {
@@ -454,6 +436,18 @@ func LevelHandler (w http.ResponseWriter, request *http.Request) {
             w.Write(jData)
         }
     }
+}
+
+func LevelQueryHandler(w http.ResponseWriter, request *http.Request) {
+    vars := mux.Vars()
+    filter := bson.M{"clientID" : vars["clientid"]}
+    var result map[string]interface{}
+    _ = collection.FindOne(context.TODO(), filter).Decode(&result)
+    // Returning the level of the queried user
+    if result["level"] == nil {
+        jsonResponse("-2")
+    }
+    jsonResponse(result["level"])
 }
 
 func LeaderboardTableHandler(w http.ResponseWriter, r *http.Request) {

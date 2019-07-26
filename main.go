@@ -121,7 +121,7 @@ func main() {
     // })
     router := mux.NewRouter()
 
-    router.Handle("/cryptex", http.FileServer(http.Dir("./dist/")))
+    router.Handle("/", http.FileServer(http.Dir("./dist/")))
     // router.Handle("/callback", http.ServeFile())
     // Without JWT middleware check
     // router.Handle("/things", ThingsHandler).Methods("GET")
@@ -219,7 +219,7 @@ func main() {
     // Not necessary when wired up to Auth0 to get tokens
     // router.Handle("/get-token", GetTokenHandler).Methods("GET")
 
-    router.PathPrefix("/cryptex/").Handler(http.StripPrefix("/cryptex/",http.FileServer(http.Dir("./dist/"))))
+    router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
     http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
 }
 

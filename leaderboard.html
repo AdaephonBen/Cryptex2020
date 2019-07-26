@@ -31,7 +31,7 @@
         </tr>
     </table>
     <script>
-        fetch("http://localhost:8080/leaderboard").then(response => response.json())
+        fetch("http://iith.dev/leaderboard").then(response => response.json())
             .then(result => {
                 for (var i = 1; i <= result.length; i++) {
                     var table = document.getElementsByTagName("table")[0];

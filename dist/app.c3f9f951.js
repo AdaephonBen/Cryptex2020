@@ -40483,7 +40483,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
-var AUTH0_CALLBACK_URL = "http://iith.dev";
+var AUTH0_CALLBACK_URL = "https://2020.elan.org.in";
 var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 function Level(_ref) {
@@ -40662,7 +40662,7 @@ function (_React$Component3) {
     value: function fetchLevel() {
       var _this2 = this;
 
-      var url = "http://iith.dev/whichlevel/" + JSON.parse(localStorage.getItem("email")).email;
+      var url = "https://2020.elan.org.in/whichlevel/" + JSON.parse(localStorage.getItem("email")).email;
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40796,7 +40796,7 @@ function (_React$Component5) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -40806,7 +40806,7 @@ function (_React$Component5) {
     value: function componentWillMount() {
       var _this4 = this;
 
-      var url = "http://iith.dev/level/" + localStorage.getItem("id_token");
+      var url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40888,7 +40888,7 @@ function (_React$Component6) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -40898,7 +40898,7 @@ function (_React$Component6) {
     value: function componentWillMount() {
       var _this6 = this;
 
-      var url = "http://iith.dev/level/" + localStorage.getItem("id_token");
+      var url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41008,7 +41008,7 @@ function (_React$Component7) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "http://iith.dev/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -41018,7 +41018,7 @@ function (_React$Component7) {
     value: function componentWillMount() {
       var _this8 = this;
 
-      var url = "http://iith.dev/level/" + localStorage.getItem("id_token");
+      var url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41098,7 +41098,7 @@ function (_React$Component8) {
       var _this10 = this;
 
       event.preventDefault();
-      var url = "http://iith.dev/doesUsernameExist/" + this.state.value;
+      var url = "https://2020.elan.org.in/doesUsernameExist/" + this.state.value;
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41163,7 +41163,7 @@ function (_React$Component9) {
   }, {
     key: "handleAccepted",
     value: function handleAccepted() {
-      var url = "http://iith.dev/acceptedrules/" + localStorage.getItem("id_token");
+      var url = "https://2020.elan.org.in/acceptedrules/" + localStorage.getItem("id_token");
       console.log(url);
       fetch(url);
       window.location.reload();
@@ -41333,7 +41333,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37787" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39747" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

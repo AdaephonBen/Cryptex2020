@@ -424,6 +424,10 @@ class LevelRules extends React.Component {
 				<br />
 				<br />
 				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 				<h1 className="rules">Rules</h1>
 				<div class="rules" style={{textAlign: "left"}}>
 					<div class="rules-content">

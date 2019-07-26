@@ -41098,11 +41098,11 @@ function (_React$Component8) {
       var _this10 = this;
 
       event.preventDefault();
-      var url = "http://iith.dev/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+      var url = "http://iith.dev/doesUsernameExist/" + this.state.value;
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
-        if (result.data.doesUsernameExist == true) {
+        if (result.message == "true") {
           alert("That username exists");
         } else {
           var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this10.state.value + "/" + localStorage.getItem("id_token");

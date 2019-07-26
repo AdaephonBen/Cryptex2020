@@ -138,6 +138,7 @@ func main() {
     router.HandleFunc("/midi.mid", MIDIHandler)
     router.HandleFunc("/rules", RulesHandler)
     router.HandleFunc("/whichlevel/{clientid}", LevelQueryHandler)
+    router.HandleFunc("/doesUsernameExist/{username}", DoesUsernameExistHandler)
     // Define GraphQL User Type :
     // userType := graphql.NewObject(graphql.ObjectConfig{
     //     Name: "User", 
@@ -402,8 +403,9 @@ func LeaderboardHandler (w http.ResponseWriter, request *http.Request) {
     w.Write(jData)
 }
 
+
+
 func LevelHandler (w http.ResponseWriter, request *http.Request) {
-    fmt.Println("Here")
     vars := mux.Vars(request)
     find, _ := collection.Find(context.TODO(), bson.M{"secret": vars["secret"][0:378]})
     JSOND, _ := json.Marshal(find.Next(context.TODO()))
@@ -449,6 +451,18 @@ func LevelQueryHandler(w http.ResponseWriter, request *http.Request) {
         responseJSON(strconv.Itoa(current.Level), w, http.StatusOK)
     } else {
         responseJSON("-2", w, http.StatusOK)
+    }
+}
+
+func DoesUsernameExistHandler (w http.ResponseWriter, request *http.Request) {
+    vars := mux.Vars(request)
+    find, _ := collection.Find(context.TODO(), bson.M{"username" : vars["username"]})
+    JSOND, _ := json.Marshal(find.Next(context.TODO()))
+    // Returning the level of the queried user
+    if strings.Compare(string(JSOND), "true") == 0 {
+        responseJSON("true", w, http.StatusOK)
+    } else {
+        responseJSON("false", w, http.StatusOK)
     }
 }
 

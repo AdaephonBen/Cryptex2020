@@ -363,10 +363,10 @@ class LevelUsername extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "http://iith.dev/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
+		let url = "http://iith.dev/doesUsernameExist/" + this.state.value ;
 		fetch(url).then(response => response.json())
 			.then(result => {
-				if (result.data.doesUsernameExist == true) {
+				if (result.message == "true") {
 					alert("That username exists");
 				}
 				else {

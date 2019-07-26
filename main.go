@@ -439,15 +439,17 @@ func LevelHandler (w http.ResponseWriter, request *http.Request) {
 }
 
 func LevelQueryHandler(w http.ResponseWriter, request *http.Request) {
-    vars := mux.Vars()
-    filter := bson.M{"clientID" : vars["clientid"]}
-    var result map[string]interface{}
-    _ = collection.FindOne(context.TODO(), filter).Decode(&result)
+    vars := mux.Vars(request)
+    find, _ := collection.Find(context.TODO(), bson.M{"clientID" : vars["clientid"]})
+    JSOND, _ := json.Marshal(find.Next(context.TODO()))
     // Returning the level of the queried user
-    if result["level"] == nil {
-        jsonResponse("-2")
+    if strings.Compare(string(JSOND), "true") == 0 {
+        var current DatabaseUserObject
+        _ = find.Decode(&current)
+        responseJSON(strconv.Itoa(current.Level), w, http.StatusOK)
+    } else {
+        responseJSON("-2", w, http.StatusOK)
     }
-    jsonResponse(result["level"])
 }
 
 func LeaderboardTableHandler(w http.ResponseWriter, r *http.Request) {

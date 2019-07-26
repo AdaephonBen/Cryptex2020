@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import "./../css/index.css"
 import $ from 'jquery';
 import auth0 from 'auth0-js';
+import { format } from "url";
 
 const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
@@ -127,10 +128,10 @@ class LoggedIn extends React.Component {
 	fetchLevel() {
 		let url = "http://iith.dev/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}"
 		fetch(url)
-			.then(response => response.json())
-			.then(result => {
-				this.setState({ level: result.data.level });
-			});
+			.then(response => format.Println(response));
+			// .then(result => {
+			// 	this.setState({ level: result.data.level });
+			// });
 	}
 
 	componentDidMount() {

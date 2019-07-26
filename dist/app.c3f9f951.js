@@ -40483,7 +40483,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
-var AUTH0_CALLBACK_URL = "http://localhost:8080";
+var AUTH0_CALLBACK_URL = "http://iith.dev";
 var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 function Level(_ref) {

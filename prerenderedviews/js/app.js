@@ -8,7 +8,7 @@ import auth0 from 'auth0-js';
 
 const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
-const AUTH0_CALLBACK_URL = "http://localhost:8080";
+const AUTH0_CALLBACK_URL = "http://iith.dev";
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
 export default function Level({ clientID }) {

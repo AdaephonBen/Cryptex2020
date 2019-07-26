@@ -219,7 +219,7 @@ func main() {
     // Not necessary when wired up to Auth0 to get tokens
     // router.Handle("/get-token", GetTokenHandler).Methods("GET")
 
-    router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
+    router.PathPrefix("/cryptex").Handler(http.FileServer(http.Dir("./dist/")))
     http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
 }
 

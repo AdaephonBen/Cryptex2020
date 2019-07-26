@@ -121,7 +121,7 @@ func main() {
     // })
     router := mux.NewRouter()
 
-    router.Handle("/", http.FileServer(http.Dir("./dist/")))
+    router.Handle("/cryptex", http.FileServer(http.Dir("./dist/")))
     // router.Handle("/callback", http.ServeFile())
     // Without JWT middleware check
     // router.Handle("/things", ThingsHandler).Methods("GET")

@@ -1,0 +1,5570 @@
+Server started... 
+To do : Protect all endpoints with JWT Auth
+Change level type to int. It's string rn. 
+Connected to MongoDB!
+Fuck this   0   Ejjeje
+Fuck this   0   Ujjj
+Fuck this   0   Jjj
+Fuck this   0   Fuck you bish
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6InJhaHVsbXlzdXJ1N0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDMyODI1NjI0NTg3NDI1NDcwMDgiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2NDE1M
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImJkMTliZGVzMTEwMTBAaWl0aC5hYy5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMTI4MTg1MzE0Nzc4MDgxMjM2OSIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0M
+{Rahul s 0}
+{Danvish 0}
+{Akhil -1}
+{Rajesh Chavre -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNzMTlidGVjaDExMDMwQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDQxMjM3NTIyNzk2ODg1MDAwNTQiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImJkMTliZGVzMTEwMDhAaWl0aC5hYy5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwODQyNzI5NTcwMTM1NzE2NjE3MSIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0M
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNoMTlidGVjaDExMDMzQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDIxNDQ3NTY4MjI3Mzg3MDI1ODAiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Akhil -1}
+{Gokul2k2 -1}
+{Ankith -1}
+{Burningmagpie -1}
+{Ace28 -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNzMTlidGVjaDExMDQ4QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTMwMTM4NDgyNDYwNDAxODQ5MTkiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVzMTlidGVjaDExMDAxQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDEzMTEyOTM4MzQxMDk4MzI4NTMiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVzMTlidGVjaDExMDI1QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vY3J5cHRleDIwMjAuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVkM2IwZDM0ODFkZjdiMGRiMTc3NDNkMyIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0MTUxM
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6Im1zMTlidGVjaDExMDE2QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTgyMzU5MjU2NDI0MTkxOTQzMDMiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Akhil Baja 0}
+{noobmaster69 0}
+{Akhil -1}
+{Ankith -1}
+{Burningmagpie -1}
+{Sharan -1}
+{Dj -1}
+{Aryaman -1}
+{B.Eshwar Yadav -1}
+{LIKHITH KUMAR -1}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Akhil Baja 0}
+{noobmaster69 0}
+{Akhil -1}
+{Ankith -1}
+{Burningmagpie -1}
+{Sharan -1}
+{Dj -1}
+{Aryaman -1}
+{B.Eshwar Yadav -1}
+{LIKHITH KUMAR -1}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Akhil Baja 0}
+{noobmaster69 0}
+{Akhil -1}
+{Ankith -1}
+{Burningmagpie -1}
+{Sharan -1}
+{Dj -1}
+{Aryaman -1}
+{B.Eshwar Yadav -1}
+{LIKHITH KUMAR -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImthdXNoaWthcnlhbWFuNjIwNkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDI5MTYxMTc0MjM5MDQ4MDIxNTgiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6M
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{Akhil -1}
+{Ankith -1}
+{Burningmagpie -1}
+{Sharan -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{LIKHITH KUMAR -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVzMTlidGVjaDExMDE0QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTgyNzAwODc1MDU4NjA4NDEwMDYiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6Im1zMTlidGVjaDExMDA4QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTQ5NjE3MTI3ODk2MDg5NDg2NjIiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNlMTlidGVjaDExMDI2QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTQ5NDA3NzU2OTAzNTgzNjUyNjkiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Sharan -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{Sai Ram Aditya -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImFpMTlidGVjaDExMDA5QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTY1NTYyNTU2NDc0ODMyMDQyMzAiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+Rajesh Chavre   0   Numbers
+Ace28   0   goldenratio
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVwMTlidGVjaDExMDE4QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTcyNTc5NDI1Njc2ODA5OTk0MDIiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{Tony Stark -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Adha Sathwik -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVzMTlidGVjaDExMDIwQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDA4MTE4NzMzMDEzNjA2NjcyODAiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Adha Sathwik 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{Tony Stark -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Adha Sathwik 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{Tony Stark -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Kamikaze  -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Adha Sathwik 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{Tony Stark -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Kamikaze  -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Adha Sathwik 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Dj -1}
+{B.Eshwar Yadav -1}
+{Tony Stark -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Kamikaze  -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6Im1zMTlidGVjaDExMDA0QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTczMTU1NDcwODMxMzY0NTkwNjIiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNlMTlidGVjaDExMDIzQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDQ1MzA1NTY2MDUyMzIwMDE5NjUiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6Im1lMTlidGVjaDExMDI2QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDI3MzY1MjMyODM3MjMwNjM1ODYiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImFkYXJzaGRoYW1hbmdlMTIzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExNjE0ODcwNjYyNDMxNjkwMzc0NyIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxN
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{Ankith -1}
+{Burningmagpie -1}
+{B.Eshwar Yadav -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+Ace28   0   1
+Ace28   0   one
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{Ankith -1}
+{Burningmagpie -1}
+{B.Eshwar Yadav -1}
+{Smaran -1}
+{darktrojan -1}
+{Sonac -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVwMTlidGVjaDExMDE2QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg2MjcxNzk4NjY1MzAzNTg4MzgiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+Anirudh   0   fear
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNzMTlidGVjaDExMDAxQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTMxODU5OTk2NjkwNDY3MjI5NjEiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+noobmaster69   0   o
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{Ankith -1}
+{Burningmagpie -1}
+{B.Eshwar Yadav -1}
+{Smaran -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+{FaZeRKG -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{Ankith -1}
+{Burningmagpie -1}
+{B.Eshwar Yadav -1}
+{Smaran -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+{FaZeRKG -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNlMTlidGVjaDExMDA5QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vY3J5cHRleDIwMjAuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVkM2IwZDI1ODI3NWQxMGNmZTNmZTE0OSIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0MTUxM
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+{FaZeRKG -1}
+{Vidit Tripathi -1}
+{Samar Garg -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+{FaZeRKG -1}
+{Vidit Tripathi -1}
+{Samar Garg -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNoMTlidGVjaDExMDI4QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDA5NTIxMzc2NTM1MjE3MjE1NDgiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Kamikaze  -1}
+{Mansi Nanavati -1}
+{Vidit Tripathi -1}
+{Samar Garg -1}
+darktrojan   0   heroin
+Bright champ   0   scorpio
+noobmaster69   0   4
+noobmaster69   0   9
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImJkMTliZGVzMTEwMDlAaWl0aC5hYy5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMTE1NDM1MzY2NjE1MTQ3MDI1OCIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0M
+Bright champ   0   lion
+Bright champ   0   zodiac
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6Im1lMTlidGVjaDExMDM5QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTgyMjMwNzE1Nzg2ODAxMDU5NjAiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+noobmaster69   0   9
+noobmaster69   0   3
+Bright champ   0   fibonacci
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+Bright champ   0   scorpion
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+Bright champ   0   octopus
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+{Sandesh -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+{Sandesh -1}
+noobmaster69   0   1
+noobmaster69   0   8
+Anirudh   0   and
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+{Sandesh -1}
+noobmaster69   0   2
+noobmaster69   0   4
+noobmaster69   0   5
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6InNhcmF0aGNoYW5kcmF2b29ubmFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vY3J5cHRleDIwMjAuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTA3NTk4OTgyNjUyNjg3MDA4NTE4IiwiYXVkIjoieFNXRjdFWjhOTml1c1Fwd0NlS2JoMjFUR2pSUjd0SXkiLCJpYXQiO
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVzMTlidGVjaDExMDA5QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDQ2OTA5ODQ5NTQ0NjQxNzY3MTIiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+{Sandesh -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Samar Garg -1}
+{Sandesh -1}
+noobmaster69   0   a
+noobmaster69   0   e
+noobmaster69   0   r
+noobmaster69   0   t
+Spangamer   0   13
+noobmaster69   0   y
+noobmaster69   0   u
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNzMTlidGVjaDExMDMzQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWQzYjBmMDI4Mjc1ZDEwY2ZlM2ZlMTY4IiwiYXVkIjoieFNXRjdFWjhOTml1c1Fwd0NlS2JoMjFUR2pSUjd0SXkiLCJpYXQiOjE1NjQxNTE2M
+noobmaster69   0   i
+noobmaster69   0   o
+noobmaster69   0   p
+Spangamer   0   21
+noobmaster69   0   a
+Spangamer   0   13
+Spangamer   0   13
+Spangamer   0   21
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+noobmaster69   0   one
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{PavanKmr -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{PavanKmr -1}
+{Angad11121 -1}
+noobmaster69   0   ph
+noobmaster69   0   phi
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6InNhaW50cGF2YW5uQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExNjk4NjExNDY5MjgyOTgzNDgzOSIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0MTUyM
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNzMTlidGVjaDExMDM1QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vY3J5cHRleDIwMjAuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVkM2IxMTJkODFkZjdiMGRiMTc3NDQyMSIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0MTUyM
+noobmaster69   0   goldenrtio
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+noobmaster69   0   goldenrato
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{Kundan_5493 -1}
+Bright champ   0   dot
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImFncmF3YWxrdW5kYW4yNzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vY3J5cHRleDIwMjAuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTA4MzMyMDk2NjI5NDM2NjkzMjUzIiwiYXVkIjoieFNXRjdFWjhOTml1c1Fwd0NlS2JoMjFUR2pSUjd0SXkiLCJpYXQiOjE1N
+Bright champ   0   swirl
+Sarath chandra   0   Spiral
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{Maggie -1}
+{Aaditya -1}
+{Bhaskar  -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{Maggie -1}
+{Aaditya -1}
+{Bhaskar  -1}
+{abhisheksahoo242 -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6Im1zMTlidGVjaDExMDA5QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTMyOTc1NDUzMTQxNDk2MTY3ODgiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNlMTdidGVjaDExMDMzQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDg3OTMwMjczNTQwNzU0MDY2MzMiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+noobmaster69   0   0
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Bhaskar  0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{Aaditya -1}
+{abhisheksahoo242 -1}
+Sarath chandra   0   6
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVlMTlidGVjaDExMDI3QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTczMTY5NjAwNTQxMzYxMTE2MTIiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Ansha Ashraf -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImFuc2hhYXNocmFmMzMzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExNjgwNzQxNjgzNjA3NjM3NzIxMCIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0M
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVlMTlidGVjaDExMDI0QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc1NTE5MjU1MjcyODYzODA5OTgiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVlMTlidGVjaDExMDM4QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTUwNjExNTk4Nzg4MTUxMTE3NDkiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+Ansha Ashraf   0   Sa ri ga ma pa dha ni sa
+PavanKmr   0   1.618
+PavanKmr   0   1.618
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+Spangamer   0   13
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+Spangamer   0   21
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{Jai Goyal -1}
+{abhisheksahoo242 -1}
+iamntbb   0   A
+noobmaster69   0   qwertyuopasdfghjklzxcvbnm
+iamntbb   0   W
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNzMTlidGVjaDExMDI3QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMzk3OTQ5ODQ1MTIyOTUxNTAiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+iamntbb   0   H
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+darktrojan   0   phi
+darktrojan   0   fibonacci
+Spangamer   0   13
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+PavanKmr   0   9
+PavanKmr   0   9
+noobmaster69   0   k
+PavanKmr   0   9
+Ace28   0   1.618033
+PavanKmr   0   9
+PavanKmr   0   nine
+iamntbb   0   T
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+iamntbb   0   M
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Akhil Baja   0   t
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Spangamer   0   13
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Akhil Baja   0   t
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   zero
+iamntbb   0   7
+Kamikaze    0   infinity
+Kamikaze    0   infinite
+Kamikaze    0   8
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+PavanKmr   0   Space
+PavanKmr   0   space
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   nonfinite
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   infinity
+Spangamer   0   13
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   unlimited
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   limitless
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   nolimit
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+iamntbb   0   Eighth doctor
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{WarWolf -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{WarWolf -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{WarWolf -1}
+Kamikaze    0   noend
+Spangamer   0   13
+Kamikaze    0   noend
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{WarWolf -1}
+PavanKmr   0   1.619
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImJkMTliZGVzMTEwMDVAaWl0aC5hYy5pbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2NyeXB0ZXgyMDIwLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMDc5MDIzMTYzOTc2Njc2NjA1NiIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0M
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+PavanKmr   0   1.61
+PavanKmr   0   161
+Anirudh   0   the
+PavanKmr   0   1.61
+PavanKmr   0   161
+PavanKmr   0   8
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   circle
+Kamikaze    0   zero
+Kamikaze    0   loop
+Kamikaze    0   ring
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+iamntbb   0   The eighth house
+Kamikaze    0   fibonacci
+Kamikaze    0   0
+Kamikaze    0   o
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Ace28   0   2
+Ace28   0   two
+Swapnish Sahare   0   Milky way
+Swapnish Sahare   0   Milky way
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+iamntbb   0   Octophobia
+Swapnish Sahare   0   neptune
+iamntbb   0   Arithmophobia
+Swapnish Sahare   0   milkyway
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImVwMThidGVjaDExMDE4QGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9jcnlwdGV4MjAyMC5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDU2MzA3MjYwMzY5MjczODcxNTEiLCJhdWQiOiJ4U1dGN0VaOE5OaXVzUXB3Q2VLYmgyMVRHalJSN3RJeSIsImlhdCI6MTU2N
+Spangamer   0   thirteen
+Spangamer   0   thirteen
+TestAdmin   0   Qerty
+Spangamer   0   thirteen
+Spangamer   0   twenty one
+Swapnish Sahare   0   fortysix
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Ace28   0   pyramid
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   vision
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Swapnish Sahare   0   infinity
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Swapnish Sahare   0   infinite
+iamntbb   0   D
+iamntbb   0   J
+Swapnish Sahare   0   infinitysymbol
+iamntbb   0   Dj
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   nowhere
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   blank
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+iamntbb   0   Bathmophobia
+Kamikaze    0   neverending
+Kamikaze    0   neverend
+Kamikaze    0   eight
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Kamikaze    0   infinit
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Swapnish Sahare   0   cuboid
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+Swapnish Sahare   0   g
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+Swapnish Sahare   0   8
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+Swapnish Sahare   0   spiral
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUSXhRME16TlRrd05rTTJNVVpFTWpGRlJVTTJOa1kzUmtKQ05VSkdPVGRGT1RreU1VTkNSUSJ9.eyJlbWFpbCI6ImNoMTlidGVjaDExMDEwQGlpdGguYWMuaW4iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vY3J5cHRleDIwMjAuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVkM2IxZjExNWY1YzFiMGNjZjZkODgxZiIsImF1ZCI6InhTV0Y3RVo4Tk5pdXNRcHdDZUtiaDIxVEdqUlI3dEl5IiwiaWF0IjoxNTY0MTU1N
+Swapnish Sahare   0   spring
+Blackfyre   0   Top
+Blackfyre   0   top
+Swapnish Sahare   0   neptune
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Blackfyre 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+Spangamer   0   13
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Blackfyre 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}
+{Akhil 0}
+{Rahul s 0}
+{Danvish 0}
+{Rajesh Chavre 0}
+{Gokul2k2 0}
+{Swapnish Sahare 0}
+{Anirudh 0}
+{Ace28 0}
+{Sharan 0}
+{Akhil Baja 0}
+{Dj 0}
+{Aryaman 0}
+{noobmaster69 0}
+{B.Eshwar Yadav 0}
+{LIKHITH KUMAR 0}
+{MS19BTECH11008 0}
+{Sai Ram Aditya 0}
+{Tony Stark 0}
+{darktrojan 0}
+{Sonac 0}
+{Adha Sathwik 0}
+{Kamikaze  0}
+{Bright champ 0}
+{Adarsh 0}
+{FaZeRKG 0}
+{Vidit Tripathi 0}
+{Samar Garg 0}
+{Sarath chandra 0}
+{Spangamer 0}
+{Ansha Ashraf 0}
+{PavanKmr 0}
+{Angad11121 0}
+{Jai Goyal 0}
+{Kundan_5493 0}
+{Maggie 0}
+{Aaditya 0}
+{Bhaskar  0}
+{iamntbb 0}
+{Uday_kiran 0}
+{WarWolf 0}
+{TestAdmin 0}
+{Blackfyre 0}
+{Ankith -1}
+{Burningmagpie -1}
+{Smaran -1}
+{Mansi Nanavati -1}
+{Sandesh -1}
+{abhisheksahoo242 -1}
+{fuckmehard -1}

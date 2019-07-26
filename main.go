@@ -16,8 +16,6 @@ import (
     "strings"
     "errors"
     "log"
-    "os"
-    "github.com/gorilla/handlers"
     // "github.com/codegangsta/negroni"
     // "github.com/auth0/go-jwt-middleware"
     "github.com/dgrijalva/jwt-go"
@@ -203,7 +201,7 @@ func main() {
     // router.Handle("/get-token", GetTokenHandler).Methods("GET")
 
     router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
-    http.ListenAndServe(":8080", gzipHandler(handlers.LoggingHandler(os.Stdout, router)))
+    http.ListenAndServe(":8080", gzipHandler(router))
 }
 
 type gzipResponseWriter struct {
@@ -315,10 +313,7 @@ func AddUser(w http.ResponseWriter, request *http.Request) {
     JSOND, _ := json.Marshal(find.Next(context.TODO()))
     UserStatus := string(JSOND)
     if strings.Compare(UserStatus, "false") == 0 {
-        res, _ := collection.InsertOne(context.TODO(), bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378], "lastModified": time.Now().UTC()})
-        fmt.Println("Added a new user to MongoDB")
-        fmt.Println("MongoDB ID ")
-        fmt.Println(res.InsertedID)
+        _, _ = collection.InsertOne(context.TODO(), bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378], "lastModified": time.Now().UTC()})
     }
 }
 func AcceptedRules(w http.ResponseWriter, request *http.Request) {
@@ -347,6 +342,7 @@ func AnswerQuestion(w http.ResponseWriter, request *http.Request) {
             if (err != nil) {
                 fmt.Println("Error decoding database object ", err)
             }
+fmt.Println(current.Username, " ", current.Level, " ", vars["answer"])
             if strings.Compare(strconv.Itoa(current.Level), vars["level"]) == 0 {
                 if strings.Compare(val, vars["answer"]) == 0 {
                     filter := bson.D{{"secret", vars["secret"][0:378]}}

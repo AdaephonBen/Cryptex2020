@@ -42133,7 +42133,7 @@ function (_React$Component3) {
     value: function fetchLevel() {
       var url = "http://iith.dev/graphql?query={level(clientID:\"" + JSON.parse(localStorage.getItem("email")).email + "\")}";
       fetch(url).then(function (response) {
-        return _url.format.Println(response);
+        return console.log(response);
       }); // .then(result => {
       // 	this.setState({ level: result.data.level });
       // });

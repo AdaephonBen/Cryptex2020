@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leaderboard | Cryptex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="/css">
+</head>
+
+<body>
+    <nav class="animated fadeInDown">
+        <ul>
+            <a href="/rules">
+                <li>Guidelines</li>
+            </a>
+            <a href="/" className="main animated flipInX">
+                <li>C R Y P T E X</li>
+            </a>
+            <a href="/leaderboardtable" id="leaderboard-nav-link">
+                <li>Leaderboard</li>
+            </a>
+        </ul>
+    </nav>
+    <br />
+    <br />
+    <table class="leaderboard">
+        <tr>
+            <td>Rank</td>
+            <td>Username</td>
+            <td>Level</td>
+        </tr>
+    </table>
+    <script>
+        fetch("http://localhost:8080/leaderboard").then(response => response.json())
+            .then(result => {
+                for (var i = 1; i <= result.length; i++) {
+                    var table = document.getElementsByTagName("table")[0];
+                    var newTr = document.createElement("tr");
+                    var newTdRank = document.createElement("td");
+                    var newTdUsername = document.createElement("td");
+                    var newTdLevel = document.createElement("td");
+                    var rankText = document.createTextNode(i.toString());
+                    var usernameText = document.createTextNode(result[i - 1].username);
+                    var levelText = document.createTextNode(result[i - 1].level.toString());
+                    newTdRank.appendChild(rankText);
+                    newTdUsername.appendChild(usernameText);
+                    newTdLevel.appendChild(levelText);
+                    newTr.appendChild(newTdRank)
+                    newTr.appendChild(newTdUsername)
+                    newTr.appendChild(newTdLevel)
+                    table.appendChild(newTr);
+                }
+            })
+            ;
+    </script>
+</body>
+
+</html>

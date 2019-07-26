@@ -40529,23 +40529,15 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("nav", {
         "class": "animated fadeInDown"
-      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
+      }, _react.default.createElement("ul", null, _react.default.createElement("a", {
+        href: "/rules"
+      }, _react.default.createElement("li", null, "Guidelines")), _react.default.createElement("a", {
+        href: "/",
         className: "main animated flipInX"
-      }, "cryptex"), _react.default.createElement("div", {
-        className: "burger"
-      }, _react.default.createElement("div", {
-        className: "line1"
-      }), _react.default.createElement("div", {
-        className: "line2"
-      }), _react.default.createElement("div", {
-        className: "line3"
-      }))), _react.default.createElement("div", {
-        "class": "responsive"
-      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
-        className: "leftnav"
-      }, "Rules"), _react.default.createElement("li", null, "Cryptex 2019"), _react.default.createElement("li", null, "Sponsors"), _react.default.createElement("li", {
-        className: "rightnav"
-      }, "About Us"))));
+      }, _react.default.createElement("li", null, "C R Y P T E X")), _react.default.createElement("a", {
+        href: "/leaderboardtable",
+        id: "leaderboard-nav-link"
+      }, _react.default.createElement("li", null, "Leaderboard"))));
     }
   }]);
 
@@ -40606,6 +40598,14 @@ function (_React$Component2) {
       }
     }
   }, {
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
     key: "componentWillMount",
     value: function componentWillMount() {
       this.setup();
@@ -40615,7 +40615,7 @@ function (_React$Component2) {
   }, {
     key: "renderBody",
     value: function renderBody() {
-      if (this.loggedIn) return _react.default.createElement("div", null, " ", _react.default.createElement(Navbar, null), " ", _react.default.createElement(LoggedIn, null), " ");else return _react.default.createElement("div", null, _react.default.createElement(Navbar, null), _react.default.createElement(Home, null));
+      if (this.loggedIn) return _react.default.createElement("div", null, " ", _react.default.createElement(Navbar, null), " ", _react.default.createElement(LoggedIn, null));else return _react.default.createElement("div", null, _react.default.createElement(Navbar, null), _react.default.createElement(Home, null));
     }
   }, {
     key: "render",
@@ -40690,6 +40690,27 @@ function (_React$Component3) {
           case "-1":
             return _react.default.createElement(LevelRules, null);
             break;
+
+          case "0":
+            return _react.default.createElement(LevelImage, null);
+
+          case "1":
+            return _react.default.createElement(LevelImage, null);
+
+          case "2":
+            return _react.default.createElement(LevelText, null);
+
+          case "3":
+            return _react.default.createElement(LevelMidi, null);
+
+          case "4":
+            return _react.default.createElement(LevelImage, null);
+
+          case "5":
+            return _react.default.createElement(LevelImage, null);
+
+          case "6":
+            return _react.default.createElement(LevelWon, null);
         }
       } else {
         return _react.default.createElement("div", {
@@ -40702,26 +40723,69 @@ function (_React$Component3) {
   return LoggedIn;
 }(_react.default.Component);
 
-var LevelUsername =
+var LevelWon =
 /*#__PURE__*/
 function (_React$Component4) {
-  _inherits(LevelUsername, _React$Component4);
+  _inherits(LevelWon, _React$Component4);
 
-  function LevelUsername(props) {
+  function LevelWon() {
+    _classCallCheck(this, LevelWon);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(LevelWon).apply(this, arguments));
+  }
+
+  _createClass(LevelWon, [{
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "won congrats"
+      }, "You have won. ", _react.default.createElement("br", null), " Congrats.", _react.default.createElement("br", null), _react.default.createElement("button", {
+        onClick: this.logout
+      }, "Logout"));
+    }
+  }]);
+
+  return LevelWon;
+}(_react.default.Component);
+
+var LevelImage =
+/*#__PURE__*/
+function (_React$Component5) {
+  _inherits(LevelImage, _React$Component5);
+
+  function LevelImage(props) {
     var _this3;
 
-    _classCallCheck(this, LevelUsername);
+    _classCallCheck(this, LevelImage);
 
-    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(LevelUsername).call(this, props));
+    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(LevelImage).call(this, props));
     _this3.state = {
-      value: ""
+      value: "",
+      url: "",
+      level: -3
     };
     _this3.handleChange = _this3.handleChange.bind(_assertThisInitialized(_this3));
     _this3.handleSubmit = _this3.handleSubmit.bind(_assertThisInitialized(_this3));
     return _this3;
   }
 
-  _createClass(LevelUsername, [{
+  _createClass(LevelImage, [{
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
     key: "handleChange",
     value: function handleChange(event) {
       this.setState({
@@ -40731,7 +40795,307 @@ function (_React$Component4) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(event) {
+      event.preventDefault();
+      var url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      fetch(url).then(function () {
+        window.location.reload();
+      });
+    }
+  }, {
+    key: "componentWillMount",
+    value: function componentWillMount() {
       var _this4 = this;
+
+      var url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+      fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        _this4.setState({
+          url: result.URL
+        });
+
+        _this4.setState({
+          level: result.Level
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      console.log(this.state.url);
+      return _react.default.createElement("div", {
+        className: "level-form won"
+      }, _react.default.createElement("br", null), _react.default.createElement("img", {
+        src: this.state.url,
+        "class": "level-image"
+      }), _react.default.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, _react.default.createElement("input", {
+        type: "name",
+        className: "answerTextbox",
+        value: this.state.value,
+        onChange: this.handleChange
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
+        type: "submit",
+        className: "answer-button",
+        value: "Submit"
+      })), _react.default.createElement("br", null), _react.default.createElement("button", {
+        onClick: this.logout
+      }, "Logout"));
+    }
+  }]);
+
+  return LevelImage;
+}(_react.default.Component);
+
+var LevelText =
+/*#__PURE__*/
+function (_React$Component6) {
+  _inherits(LevelText, _React$Component6);
+
+  function LevelText(props) {
+    var _this5;
+
+    _classCallCheck(this, LevelText);
+
+    _this5 = _possibleConstructorReturn(this, _getPrototypeOf(LevelText).call(this, props));
+    _this5.state = {
+      value: "",
+      url: "",
+      level: -3
+    };
+    _this5.handleChange = _this5.handleChange.bind(_assertThisInitialized(_this5));
+    _this5.handleSubmit = _this5.handleSubmit.bind(_assertThisInitialized(_this5));
+    return _this5;
+  }
+
+  _createClass(LevelText, [{
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      event.preventDefault();
+      var url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      fetch(url).then(function () {
+        window.location.reload();
+      });
+    }
+  }, {
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var _this6 = this;
+
+      var url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+      fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        _this6.setState({
+          url: result.URL
+        });
+
+        _this6.setState({
+          level: result.Level
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var strings = [];
+
+      for (var i = 0; i < 13; i++) {
+        strings[i] = this.state.url.substring(54 * i, 54 * i + 53);
+      }
+
+      return _react.default.createElement("div", {
+        className: "level-form won"
+      }, _react.default.createElement("br", null), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[0]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[1]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[2]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[3]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[4]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[5]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[6]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[7]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[8]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[9]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[10]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[11]), _react.default.createElement("p", {
+        className: "white-text"
+      }, strings[12]), _react.default.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, _react.default.createElement("input", {
+        type: "name",
+        className: "answerTextbox",
+        value: this.state.value,
+        onChange: this.handleChange
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
+        type: "submit",
+        className: "answer-button",
+        value: "Submit"
+      })), _react.default.createElement("br", null), _react.default.createElement("button", {
+        onClick: this.logout
+      }, "Logout"));
+    }
+  }]);
+
+  return LevelText;
+}(_react.default.Component);
+
+var LevelMidi =
+/*#__PURE__*/
+function (_React$Component7) {
+  _inherits(LevelMidi, _React$Component7);
+
+  function LevelMidi(props) {
+    var _this7;
+
+    _classCallCheck(this, LevelMidi);
+
+    _this7 = _possibleConstructorReturn(this, _getPrototypeOf(LevelMidi).call(this, props));
+    _this7.state = {
+      value: "",
+      url: "",
+      level: -3
+    };
+    _this7.handleChange = _this7.handleChange.bind(_assertThisInitialized(_this7));
+    _this7.handleSubmit = _this7.handleSubmit.bind(_assertThisInitialized(_this7));
+    return _this7;
+  }
+
+  _createClass(LevelMidi, [{
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      event.preventDefault();
+      var url = "http://localhost:8080/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      fetch(url).then(function () {
+        window.location.reload();
+      });
+    }
+  }, {
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var _this8 = this;
+
+      var url = "http://localhost:8080/level/" + localStorage.getItem("id_token");
+      fetch(url).then(function (response) {
+        return response.json();
+      }).then(function (result) {
+        _this8.setState({
+          url: result.URL
+        });
+
+        _this8.setState({
+          level: result.Level
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "level-form won"
+      }, _react.default.createElement("br", null), _react.default.createElement("a", {
+        href: this.state.url
+      }, "Download"), _react.default.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, _react.default.createElement("input", {
+        type: "name",
+        className: "answerTextbox",
+        value: this.state.value,
+        onChange: this.handleChange
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
+        type: "submit",
+        className: "answer-button",
+        value: "Submit"
+      })), _react.default.createElement("br", null), _react.default.createElement("button", {
+        onClick: this.logout
+      }, "Logout"));
+    }
+  }]);
+
+  return LevelMidi;
+}(_react.default.Component);
+
+var LevelUsername =
+/*#__PURE__*/
+function (_React$Component8) {
+  _inherits(LevelUsername, _React$Component8);
+
+  function LevelUsername(props) {
+    var _this9;
+
+    _classCallCheck(this, LevelUsername);
+
+    _this9 = _possibleConstructorReturn(this, _getPrototypeOf(LevelUsername).call(this, props));
+    _this9.state = {
+      value: ""
+    };
+    _this9.handleChange = _this9.handleChange.bind(_assertThisInitialized(_this9));
+    _this9.handleSubmit = _this9.handleSubmit.bind(_assertThisInitialized(_this9));
+    return _this9;
+  }
+
+  _createClass(LevelUsername, [{
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      var _this10 = this;
 
       event.preventDefault();
       var url = "http://localhost:8080/graphql?query={doesUsernameExist(username:\"" + this.state.value + "\")}";
@@ -40741,7 +41105,7 @@ function (_React$Component4) {
         if (result.data.doesUsernameExist == true) {
           alert("That username exists");
         } else {
-          var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this4.state.value + "/" + localStorage.getItem("id_token");
+          var loginUrl = "/adduser/" + JSON.parse(localStorage.getItem("email")).email + "/" + _this10.state.value + "/" + localStorage.getItem("id_token");
           fetch(loginUrl).then(function () {
             window.location.reload();
           });
@@ -40752,7 +41116,7 @@ function (_React$Component4) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
-        className: "username-form"
+        className: "username-form won"
       }, _react.default.createElement("p", null, "You are logged in, ", JSON.parse(localStorage.getItem("email")).email, ". "), _react.default.createElement("p", null, "Give us a username."), _react.default.createElement("form", {
         onSubmit: this.handleSubmit
       }, _react.default.createElement("input", {
@@ -40764,7 +41128,9 @@ function (_React$Component4) {
         type: "submit",
         className: "username-button",
         value: "Submit"
-      })));
+      })), _react.default.createElement("br", null), _react.default.createElement("button", {
+        onClick: this.logout
+      }, "Logout"));
     }
   }]);
 
@@ -40773,20 +41139,28 @@ function (_React$Component4) {
 
 var LevelRules =
 /*#__PURE__*/
-function (_React$Component5) {
-  _inherits(LevelRules, _React$Component5);
+function (_React$Component9) {
+  _inherits(LevelRules, _React$Component9);
 
   function LevelRules(props) {
-    var _this5;
+    var _this11;
 
     _classCallCheck(this, LevelRules);
 
-    _this5 = _possibleConstructorReturn(this, _getPrototypeOf(LevelRules).call(this, props));
-    _this5.handleAccepted = _this5.handleAccepted.bind(_assertThisInitialized(_this5));
-    return _this5;
+    _this11 = _possibleConstructorReturn(this, _getPrototypeOf(LevelRules).call(this, props));
+    _this11.handleAccepted = _this11.handleAccepted.bind(_assertThisInitialized(_this11));
+    return _this11;
   }
 
   _createClass(LevelRules, [{
+    key: "logout",
+    value: function logout() {
+      localStorage.removeItem('id_token');
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('profile');
+      window.location.reload();
+    }
+  }, {
     key: "handleAccepted",
     value: function handleAccepted() {
       var url = "http://localhost:8080/acceptedrules/" + localStorage.getItem("id_token");
@@ -40798,13 +41172,22 @@ function (_React$Component5) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
-        className: "rules-container"
+        className: "rules-container won"
       }, _react.default.createElement("h1", {
         className: "rules"
-      }, "Rules Shit Here"), _react.default.createElement("button", {
+      }, "Rules"), _react.default.createElement("div", {
+        "class": "rules",
+        style: {
+          textAlign: "left"
+        }
+      }, _react.default.createElement("div", {
+        "class": "rules-content"
+      }, _react.default.createElement("ol", null, _react.default.createElement("li", null, "Mini Cryptex consists of 6 levels of increasing difficulty. You will receive successive questions upon solving and entering the answer of each level and/or completing the task involved."), _react.default.createElement("li", null, "The winner will be the first person to complete all levels. In case that no one is able to complete Cryptex before the 1800 hours 27th July, the person who occupies the first position on the leaderboard will be declared winner."), _react.default.createElement("li", null, "The competition is open only to freshers."), _react.default.createElement("li", null, "The questions, answers or any discussion related to them must not be posted anywhere. Doing so will result in disqualification. We will provide a platform to communicate with the moderators and ask for hints."), _react.default.createElement("li", null, "If a question involves typing answers in an answer box, the answers should be typed completely in lowercase, without any spaces, punctuation, special characters or numerals. The only exception to this is when the answer is the numeral greater than 1000 or when the answer is a special character."), _react.default.createElement("li", null, "If a question involves typing answers in an answer box, the answers should be typed completely in lowercase, without any spaces, punctuation, special characters or numerals. The only exception to this is when the answer is the numeral greater than 1000 or when the answer is a special character."), _react.default.createElement("li", null, "The questions may also involve interacting with the page itself, following hyperlinks etc."), _react.default.createElement("li", null, "Any attempt to access levels you have not yet reached or any form of attack on the servers will result in disqualification."), _react.default.createElement("li", null, "The organizer\u2019s decision is final in any case.")))), _react.default.createElement("button", {
         className: "accept-rules",
         onClick: this.handleAccepted
-      }, "I accept all this shit"));
+      }, "I accept"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        onClick: this.logout
+      }, "Logout"));
     }
   }]);
 
@@ -40813,17 +41196,17 @@ function (_React$Component5) {
 
 var Home =
 /*#__PURE__*/
-function (_React$Component6) {
-  _inherits(Home, _React$Component6);
+function (_React$Component10) {
+  _inherits(Home, _React$Component10);
 
   function Home(props) {
-    var _this6;
+    var _this12;
 
     _classCallCheck(this, Home);
 
-    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
-    _this6.authenticate = _this6.authenticate.bind(_assertThisInitialized(_this6));
-    return _this6;
+    _this12 = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this12.authenticate = _this12.authenticate.bind(_assertThisInitialized(_this12));
+    return _this12;
   }
 
   _createClass(Home, [{
@@ -40845,12 +41228,15 @@ function (_React$Component6) {
       return _react.default.createElement("div", null, _react.default.createElement("br", null), _react.default.createElement("div", {
         "class": "jumbotron animated fadeIn"
       }, _react.default.createElement("img", {
-        src: _.default
+        src: _.default,
+        "class": "main-image"
       }), _react.default.createElement("p", {
         "class": "jumbotron-heading animated fadeIn"
-      }, "CRYPTEX 2020"), _react.default.createElement("p", {
+      }, "CRYPTEX"), _react.default.createElement("p", {
         "class": "jumbotron-subtitle"
-      }, "Design so beautiful, it will make your heart melt. "), _react.default.createElement("button", {
+      }, "Dive in and try out our mini online Treasure Hunt"), _react.default.createElement("p", {
+        "class": "jumbotron-subtitle"
+      }, "Online till 1800 hours, 27th July. "), _react.default.createElement("button", {
         className: "DiveInButton",
         onClick: this.authenticate
       }, _react.default.createElement("div", {
@@ -40864,8 +41250,8 @@ function (_React$Component6) {
 
 var Callback =
 /*#__PURE__*/
-function (_React$Component7) {
-  _inherits(Callback, _React$Component7);
+function (_React$Component11) {
+  _inherits(Callback, _React$Component11);
 
   function Callback() {
     _classCallCheck(this, Callback);
@@ -40947,7 +41333,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44875" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37757" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

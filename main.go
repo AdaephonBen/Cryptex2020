@@ -1,8 +1,9 @@
 
 package main    
 import (
-    // "strconv"
+    "strconv"
     "encoding/json"
+    "time"
     "io"
     "compress/gzip"
     "github.com/graphql-go/graphql"
@@ -43,9 +44,20 @@ type JSONWebKeys struct {
 }
 
 type user struct {
-    clientID string `json:"clientID"`
-    username string  `json:"username"`
-    level int `json:"level"`
+    Username string  `json:"username"`
+    Level int `json:"level"`
+}
+
+type DatabaseUserObject struct {
+    Secret string `json:"secret"`
+    ClientID string `json:"clientID"`
+    Username string `json:"username"`
+    Level int `json:"level"`
+}
+
+type LevelResponse struct {
+    Level int 
+    URL string
 }
 
 var answers map[string]string
@@ -62,34 +74,12 @@ func main() {
     fmt.Println("To do : Protect all endpoints with JWT Auth")
     fmt.Println("Change level type to int. It's string rn. ")
     answers = make(map[string]string)
-    answers["0"] = "cryptex"
-    answers["1"] = "marieantoinette"
-    answers["2"] = "dontpanic"
-    answers["3"] = "ireland"
-    answers["4"] = "groot"
-    answers["5"] = "fcuk"
-    answers["6"] = "beatles"
-    answers["7"] = "bananaequivalentdose"
-    answers["8"] = "alzheimersgroup"
-    answers["9"] = "stanlee"
-    answers["10"] = "pabloescobar"
-    answers["11"] = "absolut"
-    answers["12"] = "triskaidekaphobia"
-    answers["13"] = "philipshue"
-    answers["14"] = "motugi"
-    answers["15"] = "12648430"
-    answers["16"] = "undefined0011232354"
-    answers["17"] = "quadratumlatinum"
-    answers["18"] = "dancingmen"
-    answers["19"] = "nerdfameagain"
-    answers["20"] = "buckinghampalace"
-    answers["21"] = "fortytwo"
-    answers["22"] = "markhamill"
-    answers["23"] = "ladystardust"
-    answers["24"] = "oaktoys"
-    answers["25"] = "imaginativeness"
-    answers["26"] = "502286"
-    answers["27"] = "ursaminor"
+    answers["0"] = "triskaidekaphobia"
+    answers["1"] = "nerdfameagain"
+    answers["2"] = "ireland"
+    answers["3"] = "beatles"
+    answers["4"] = "magic"
+    answers["5"] = "pabloescobar"
     // Set client options
     clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
     // Connect to MongoDB
@@ -141,6 +131,12 @@ func main() {
     router.HandleFunc("/adduser/{ID}/{username}/{secret}", AddUser)
     router.HandleFunc("/acceptedrules/{secret}", AcceptedRules)
     router.HandleFunc("/answer/{secret}/{level}/{answer}", AnswerQuestion)
+    router.HandleFunc("/level/{secret}", LevelHandler)
+    router.HandleFunc("/leaderboard", LeaderboardHandler)
+    router.HandleFunc("/leaderboardtable", LeaderboardTableHandler)
+    router.HandleFunc("/css", CSSHandler)
+    router.HandleFunc("/midi.mid", MIDIHandler)
+    router.HandleFunc("/rules", RulesHandler)
     // Define GraphQL User Type :
     // userType := graphql.NewObject(graphql.ObjectConfig{
     //     Name: "User", 
@@ -196,14 +192,6 @@ func main() {
                         return false, nil
                     }
                     return true, nil
-                },
-            },
-            "level1":&graphql.Field{
-                Type: graphql.String,
-                Args: graphql.FieldConfigArgument{
-                    "ID":&graphql.ArgumentConfig{
-                        Type: graphql.String,                  
-                    },
                 },
             },
         },
@@ -344,7 +332,7 @@ func AddUser(w http.ResponseWriter, request *http.Request) {
     JSOND, _ := json.Marshal(find.Next(context.TODO()))
     UserStatus := string(JSOND)
     if strings.Compare(UserStatus, "false") == 0 {
-        res, _ := collection.InsertOne(context.TODO(), bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378]})
+        res, _ := collection.InsertOne(context.TODO(), bson.M{"clientID":vars["ID"], "username":vars["username"], "level": -1, "secret": vars["secret"][0:378], "lastModified": time.Now().UTC()})
         fmt.Println("Added a new user to MongoDB")
         fmt.Println("MongoDB ID ")
         fmt.Println(res.InsertedID)
@@ -366,14 +354,122 @@ func AcceptedRules(w http.ResponseWriter, request *http.Request) {
 }
 
 func AnswerQuestion(w http.ResponseWriter, request *http.Request) {
-    fmt.Println("Hello")
     vars := mux.Vars(request)
-    // filter := bson.D{{"secret", vars["secret"][0:378]}}
-    // currentLevel, _ := strconv.Atoi(vars["level"])
-    // nextLevel := currentLevel+1
-    find, _ := collection.Find(context.TODO(), bson.M{"secret": vars["secret"]})
+    find, _ := collection.Find(context.TODO(), bson.M{"secret": vars["secret"][0:378]})
     JSOND, _ := json.Marshal(find.Next(context.TODO()))
-    fmt.Println(string(JSOND))
+    if strings.Compare(string(JSOND), "true") == 0 {
+        if val, ok := answers[vars["level"]]; ok {
+            var current DatabaseUserObject
+            err := find.Decode(&current)
+            if (err != nil) {
+                fmt.Println("Error decoding database object ", err)
+            }
+            if strings.Compare(strconv.Itoa(current.Level), vars["level"]) == 0 {
+                if strings.Compare(val, vars["answer"]) == 0 {
+                    filter := bson.D{{"secret", vars["secret"][0:378]}}
+                    update := bson.D{
+                        {"$inc", bson.D {
+                            {"level", 1},
+                        }},
+                    }
+                    _, err := collection.UpdateOne(context.TODO(), filter, update)
+                    update = bson.D{
+                        {"$set", bson.D {
+                            {"lastModified", time.Now().UTC()},
+                        }},
+                    }
+                    _, err = collection.UpdateOne(context.TODO(), filter, update)
+                    if err != nil {
+                        fmt.Println("Error updating ", err)
+                        responseJSON("DatabaseError", w, http.StatusInternalServerError)
+                    } else {
+                        responseJSON("Correct", w, http.StatusOK)
+                    }
+                } else {
+                    responseJSON("Wrong", w, http.StatusOK)
+                }
+            } else {
+                responseJSON("LevelNoMatch", w, http.StatusOK)
+            }
+        } else {
+            responseJSON("InvalidLevel", w, http.StatusOK)
+        }
+    } else {
+        responseJSON("InvalidToken", w, http.StatusOK)
+    }
+}
+
+func LeaderboardHandler (w http.ResponseWriter, request *http.Request) {
+    options := options.Find()
+    options.SetSort(bson.D{{"level", -1}, {"lastModified", 1}})    
+    find, _ := collection.Find(context.TODO(), bson.M{}, options)
+    var results []user
+    for find.Next(context.TODO()) {
+        // create a value into which the single document can be decoded
+        var elem user
+        err := find.Decode(&elem)
+        fmt.Println(elem)
+        if err != nil {
+            fmt.Println("Error decoding leaderboard item")
+        }
+        results = append(results, elem)
+    }
+    w.Header().Set("Content-Type", "application/json")
+    w.WriteHeader(http.StatusOK)
+    jData, _ := json.Marshal(results)
+    w.Write(jData)
+}
+
+func LevelHandler (w http.ResponseWriter, request *http.Request) {
+    fmt.Println("Here")
+    vars := mux.Vars(request)
+    find, _ := collection.Find(context.TODO(), bson.M{"secret": vars["secret"][0:378]})
+    JSOND, _ := json.Marshal(find.Next(context.TODO()))
+    if strings.Compare(string(JSOND), "true") == 0 {
+        var current DatabaseUserObject
+        err := find.Decode(&current)
+        if (err != nil) {
+            fmt.Println("Not able to read database object")
+            responseJSON("DatabaseError", w, http.StatusInternalServerError)
+        } else {
+            var resp LevelResponse
+            if (current.Level == 0) {
+                resp = LevelResponse{0, "https://res.cloudinary.com/drgddftct/image/upload/v1547292346/QPADBgJd8EkeBut6.png"}
+            } else if (current.Level == 1) {
+                resp = LevelResponse{1, "https://res.cloudinary.com/dmridruee/image/upload/v1547295044/qsQK5bRhRvgXjh378d5J/7yXw9wkWaTMXafsC7USs.png"}
+            } else if (current.Level == 2) {
+                resp = LevelResponse{2, "169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E169B62169B62169B62FFFFFFFFFFFFFFFFFFFF883EFF883EFF883E"}
+            } else if (current.Level == 3) {
+                resp = LevelResponse{3, "/midi.mid"}
+            } else if (current.Level == 4) {
+                resp = LevelResponse{4, "https://res.cloudinary.com/do3uy82tk/image/upload/v1564096693/asdfasdf.jpg"}
+            } else if (current.Level == 5) {
+                resp = LevelResponse{5, "https://res.cloudinary.com/dmridruee/image/upload/v1547211291/0PNQNGAOck2NQwyb6hQV.png"}
+            } else {
+                resp = LevelResponse{6, "Won"}
+            }
+            w.Header().Set("Content-Type", "application/json")
+            w.WriteHeader(http.StatusOK)
+            jData, _ := json.Marshal(resp)
+            w.Write(jData)
+        }
+    }
+}
+
+func LeaderboardTableHandler(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "leaderboard.html")
+}
+
+func CSSHandler(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "./prerenderedviews/css/index.css")
+}
+
+func RulesHandler(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "rules.html")
+}
+
+func MIDIHandler(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "cryptex.mid")
 }
 
 // func submitAnswer(w http.ResponseWriter, request *http.Request) {

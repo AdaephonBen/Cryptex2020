@@ -163,6 +163,7 @@ nav ul a:hover {
 }
 
 .leaderboard {
+	letter-spacing: 0.5px;
 	font-family: 'Dosis', sans-serif;
 	text-align: center;
 	margin-left: auto;

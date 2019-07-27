@@ -408,7 +408,6 @@ class LevelRules extends React.Component {
 		window.location.reload();
 	}
 	handleAccepted() {
-		event.preventDefault();
 		let url = "https://2020.elan.org.in/acceptedrules/" + (localStorage.getItem("id_token"));
 		fetch(url).then(response => {
 			console.log(response);

@@ -78,6 +78,8 @@ func main() {
     answers["3"] = "beatles"
     answers["4"] = "magic"
     answers["5"] = "pabloescobar"
+    answers["6"] = "fcuk"
+    answers["7"] = "502286"
     // Set client options
     clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
     // Connect to MongoDB
@@ -425,8 +427,12 @@ func LevelHandler (w http.ResponseWriter, request *http.Request) {
                 resp = LevelResponse{4, "https://res.cloudinary.com/do3uy82tk/image/upload/v1564096693/asdfasdf.jpg"}
             } else if (current.Level == 5) {
                 resp = LevelResponse{5, "https://res.cloudinary.com/dmridruee/image/upload/v1547211291/0PNQNGAOck2NQwyb6hQV.png"}
+            } else if (current.Level == 6) {
+                resp = LevelResponse{6, "https://res.cloudinary.com/dmridruee/image/upload/v1547192728/fpF6juWJPP7D2S9BJWcc/LQtD12ldlFRZ4OT90cDj.png"}
+            } else if (current.Level == 7) {
+                resp = LevelResponse{7, "https://res.cloudinary.com/drgddftct/image/upload/v1547371349/5g92e2eRNxtjrDLg/XbWkuXbv8tCpRwwK.gif"}
             } else {
-                resp = LevelResponse{6, "Won"}
+                resp = LevelResponse{8, "Won"}
             }
             w.Header().Set("Content-Type", "application/json")
             w.WriteHeader(http.StatusOK)

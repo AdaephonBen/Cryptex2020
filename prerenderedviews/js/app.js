@@ -159,6 +159,10 @@ class LoggedIn extends React.Component {
 				case "5":
 					return (<LevelImage />);
 				case "6":
+					return (<LevelImage />);
+				case "7":
+					return (<LevelImage />);
+				case "8":
 					return (<LevelWon />);
 			}
 		}

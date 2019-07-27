@@ -283,7 +283,7 @@ class LevelText extends React.Component {
 	render() {
 		let strings = [];
 		for (var i = 0; i < 13; i++) {
-			strings[i] = this.state.url.substring(54 * i, 54 * i + 53);
+			strings[i] = this.state.url.substring(54 * i, 54 * i + 54);
 		}
 		return (
 			<div className="level-form won">

@@ -407,7 +407,8 @@ class LevelRules extends React.Component {
 		localStorage.removeItem('profile');
 		window.location.reload();
 	}
-	handleAccepted() {
+	handleAccepted(event) {
+		event.preventDefault();
 		let url = "https://2020.elan.org.in/acceptedrules/" + (localStorage.getItem("id_token"));
 		fetch(url).then(response => {
 			console.log(response);
@@ -466,7 +467,9 @@ class LevelRules extends React.Component {
 						</ol>
 					</div>
 				</div>
-				<button className="accept-rules" onClick={this.handleAccepted}>I accept</button>
+				<form onSubmit={this.handleAccepted}>
+					<input type="submit" className="username-button" value="I accept" />
+				</form>
 				<br />
 				<button onClick={this.logout}>Logout</button>
 			</div>

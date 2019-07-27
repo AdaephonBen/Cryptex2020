@@ -223,6 +223,9 @@ a {
 	-o-transition: 1s all;
 	transition: 1s all;
 }
+.mobile {
+	font-size:14px; 
+}
 }
 @media screen and (max-width: 680px) {
 	nav {
@@ -255,6 +258,9 @@ a {
 	-o-transition: 1s all;
 	transition: 1s all;
 }
+.mobile {
+	font-size:14px; 
+}
 }
 @media screen and (max-width: 1024px) {
 	.main-image {
@@ -283,5 +289,8 @@ a {
 	-webkit-transition: 1s all;
 	-o-transition: 1s all;
 	transition: 1s all;
+}
+.mobile {
+	font-size:14px; 
 }
 }

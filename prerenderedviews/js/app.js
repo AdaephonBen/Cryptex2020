@@ -179,14 +179,17 @@ class LevelWon extends React.Component {
 			<div className="won congrats">
 				You have won. <br /> Congrats.
 				<br />
-				<p>
+				<p class="mobile">
 					Credits: 
 				</p>
-				<p>
+				<p class="mobile">
 					Questions by: Nikhil Pallam Reddy, Saurav Madhusoodanan, Rishika Rao, Riddhi Shah
 				</p>
-				<p>
+				<p class="mobile">
 					Website by: Vishnu VS, Lambda Coordinator
+				</p>
+				<p class="mobile">
+					Please give us your feedback <a href="https://forms.gle/cXDErCBHFpQva38k7">here</a>. 
 				</p>
 				<button onClick={this.logout}>Logout</button>
 			</div>

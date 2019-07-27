@@ -179,6 +179,15 @@ class LevelWon extends React.Component {
 			<div className="won congrats">
 				You have won. <br /> Congrats.
 				<br />
+				<p>
+					Credits: 
+				</p>
+				<p>
+					Questions by: Nikhil Pallam Reddy, Saurav Madhusoodanan, Rishika Rao, Riddhi Shah
+				</p>
+				<p>
+					Website by: Vishnu VS, Lambda Coordinator
+				</p>
 				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
@@ -271,6 +280,11 @@ class LevelText extends React.Component {
 		}
 		return (
 			<div className="level-form won">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 				<br />
 				<p className="white-text">{strings[0]}</p>
 				<p className="white-text">{strings[1]}</p>

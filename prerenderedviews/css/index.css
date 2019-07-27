@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Stylish');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
 body {
 	background-color: #251e28;
 	text-align: center;
@@ -54,6 +56,7 @@ body {
 }
 /* Styling for Navbar */
 nav {
+	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-size: 1.2rem;
 }
@@ -160,7 +163,7 @@ nav ul a:hover {
 }
 
 .leaderboard {
-	font-family: Title;
+	font-family: 'Roboto', sans-serif;;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;

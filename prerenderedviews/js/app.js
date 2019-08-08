@@ -8,8 +8,12 @@ import auth0 from 'auth0-js';
 
 const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
-const AUTH0_CALLBACK_URL = "https://2020.elan.org.in";
+
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
+
+const globalRootURL = "http://localhost:8080"
+
+const AUTH0_CALLBACK_URL = globalRootURL ;
 
 export default function Level({ clientID }) {
 	return (
@@ -125,7 +129,7 @@ class LoggedIn extends React.Component {
 	}
 
 	fetchLevel() {
-		let url = "https://2020.elan.org.in/whichlevel/"+JSON.parse(localStorage.getItem("email")).email ;
+		let url = globalRootURL+"/whichlevel/"+JSON.parse(localStorage.getItem("email")).email ;
 		fetch(url)
 			.then(response => response.json())
 			.then(result => {
@@ -219,13 +223,13 @@ class LevelImage extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+		let url = globalRootURL+"/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
 		fetch(url).then(() => {
 			window.location.reload();
 		});
 	}
 	componentWillMount() {
-		let url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
+		let url = globalRootURL+"/level/" + localStorage.getItem("id_token");
 		fetch(url).then(response => response.json())
 			.then(result => {
 				this.setState({ url: result.URL });
@@ -267,13 +271,13 @@ class LevelText extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+		let url = globalRootURL+"/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
 		fetch(url).then(() => {
 			window.location.reload();
 		});
 	}
 	componentWillMount() {
-		let url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
+		let url = globalRootURL+"/level/" + localStorage.getItem("id_token");
 		fetch(url).then(response => response.json())
 			.then(result => {
 				this.setState({ url: result.URL });
@@ -336,13 +340,13 @@ class LevelMidi extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+		let url = globalRootURL+"/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
 		fetch(url).then(() => {
 			window.location.reload();
 		});
 	}
 	componentWillMount() {
-		let url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
+		let url = globalRootURL+"/level/" + localStorage.getItem("id_token");
 		fetch(url).then(response => response.json())
 			.then(result => {
 				this.setState({ url: result.URL });
@@ -384,7 +388,7 @@ class LevelUsername extends React.Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		let url = "https://2020.elan.org.in/doesUsernameExist/" + this.state.value ;
+		let url = globalRootURL+"/doesUsernameExist/" + this.state.value ;
 		fetch(url).then(response => response.json())
 			.then(result => {
 				if (result.message == "true") {
@@ -430,7 +434,7 @@ class LevelRules extends React.Component {
 	}
 	handleAccepted(event) {
 		event.preventDefault();
-		let url = "https://2020.elan.org.in/acceptedrules/" + (localStorage.getItem("id_token"));
+		let url = globalRootURL+"/acceptedrules/" + (localStorage.getItem("id_token"));
 		fetch(url).then(response => {
 			console.log(response);
 		});

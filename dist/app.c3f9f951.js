@@ -40483,8 +40483,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 var AUTH0_DOMAIN = "cryptex2020.auth0.com";
-var AUTH0_CALLBACK_URL = "https://2020.elan.org.in";
 var AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
+var globalRootURL = "http://localhost:8080";
+var AUTH0_CALLBACK_URL = globalRootURL;
 
 function Level(_ref) {
   var clientID = _ref.clientID;
@@ -40662,7 +40663,7 @@ function (_React$Component3) {
     value: function fetchLevel() {
       var _this2 = this;
 
-      var url = "https://2020.elan.org.in/whichlevel/" + JSON.parse(localStorage.getItem("email")).email;
+      var url = globalRootURL + "/whichlevel/" + JSON.parse(localStorage.getItem("email")).email;
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40710,6 +40711,12 @@ function (_React$Component3) {
             return _react.default.createElement(LevelImage, null);
 
           case "6":
+            return _react.default.createElement(LevelImage, null);
+
+          case "7":
+            return _react.default.createElement(LevelImage, null);
+
+          case "8":
             return _react.default.createElement(LevelWon, null);
         }
       } else {
@@ -40747,7 +40754,17 @@ function (_React$Component4) {
     value: function render() {
       return _react.default.createElement("div", {
         className: "won congrats"
-      }, "You have won. ", _react.default.createElement("br", null), " Congrats.", _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "You have won. ", _react.default.createElement("br", null), " Congrats.", _react.default.createElement("br", null), _react.default.createElement("p", {
+        "class": "mobile"
+      }, "Credits:"), _react.default.createElement("p", {
+        "class": "mobile"
+      }, "Questions by: Nikhil Pallam Reddy, Saurav Madhusoodanan, Rishika Rao, Riddhi Shah"), _react.default.createElement("p", {
+        "class": "mobile"
+      }, "Website by: Vishnu VS, Lambda Coordinator"), _react.default.createElement("p", {
+        "class": "mobile"
+      }, "Please give us your feedback ", _react.default.createElement("a", {
+        href: "https://forms.gle/cXDErCBHFpQva38k7"
+      }, "here"), "."), _react.default.createElement("button", {
         onClick: this.logout
       }, "Logout"));
     }
@@ -40796,7 +40813,7 @@ function (_React$Component5) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = globalRootURL + "/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -40806,7 +40823,7 @@ function (_React$Component5) {
     value: function componentWillMount() {
       var _this4 = this;
 
-      var url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
+      var url = globalRootURL + "/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40888,7 +40905,7 @@ function (_React$Component6) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = globalRootURL + "/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -40898,7 +40915,7 @@ function (_React$Component6) {
     value: function componentWillMount() {
       var _this6 = this;
 
-      var url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
+      var url = globalRootURL + "/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -40917,12 +40934,12 @@ function (_React$Component6) {
       var strings = [];
 
       for (var i = 0; i < 13; i++) {
-        strings[i] = this.state.url.substring(54 * i, 54 * i + 53);
+        strings[i] = this.state.url.substring(54 * i, 54 * i + 54);
       }
 
       return _react.default.createElement("div", {
         className: "level-form won"
-      }, _react.default.createElement("br", null), _react.default.createElement("p", {
+      }, _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("p", {
         className: "white-text"
       }, strings[0]), _react.default.createElement("p", {
         className: "white-text"
@@ -41008,7 +41025,7 @@ function (_React$Component7) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      var url = "https://2020.elan.org.in/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
+      var url = globalRootURL + "/answer/" + localStorage.getItem("id_token") + "/" + this.state.level.toString() + "/" + this.state.value;
       fetch(url).then(function () {
         window.location.reload();
       });
@@ -41018,7 +41035,7 @@ function (_React$Component7) {
     value: function componentWillMount() {
       var _this8 = this;
 
-      var url = "https://2020.elan.org.in/level/" + localStorage.getItem("id_token");
+      var url = globalRootURL + "/level/" + localStorage.getItem("id_token");
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41098,7 +41115,7 @@ function (_React$Component8) {
       var _this10 = this;
 
       event.preventDefault();
-      var url = "https://2020.elan.org.in/doesUsernameExist/" + this.state.value;
+      var url = globalRootURL + "/doesUsernameExist/" + this.state.value;
       fetch(url).then(function (response) {
         return response.json();
       }).then(function (result) {
@@ -41162,10 +41179,12 @@ function (_React$Component9) {
     }
   }, {
     key: "handleAccepted",
-    value: function handleAccepted() {
-      var url = "https://2020.elan.org.in/acceptedrules/" + localStorage.getItem("id_token");
-      console.log(url);
-      fetch(url);
+    value: function handleAccepted(event) {
+      event.preventDefault();
+      var url = globalRootURL + "/acceptedrules/" + localStorage.getItem("id_token");
+      fetch(url).then(function (response) {
+        console.log(response);
+      });
       window.location.reload();
     }
   }, {
@@ -41173,7 +41192,7 @@ function (_React$Component9) {
     value: function render() {
       return _react.default.createElement("div", {
         className: "rules-container won"
-      }, _react.default.createElement("h1", {
+      }, _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("h1", {
         className: "rules"
       }, "Rules"), _react.default.createElement("div", {
         "class": "rules",
@@ -41182,10 +41201,13 @@ function (_React$Component9) {
         }
       }, _react.default.createElement("div", {
         "class": "rules-content"
-      }, _react.default.createElement("ol", null, _react.default.createElement("li", null, "Mini Cryptex consists of 6 levels of increasing difficulty. You will receive successive questions upon solving and entering the answer of each level and/or completing the task involved."), _react.default.createElement("li", null, "The winner will be the first person to complete all levels. In case that no one is able to complete Cryptex before the 1800 hours 27th July, the person who occupies the first position on the leaderboard will be declared winner."), _react.default.createElement("li", null, "The competition is open only to freshers."), _react.default.createElement("li", null, "The questions, answers or any discussion related to them must not be posted anywhere. Doing so will result in disqualification. We will provide a platform to communicate with the moderators and ask for hints."), _react.default.createElement("li", null, "If a question involves typing answers in an answer box, the answers should be typed completely in lowercase, without any spaces, punctuation, special characters or numerals. The only exception to this is when the answer is the numeral greater than 1000 or when the answer is a special character."), _react.default.createElement("li", null, "If a question involves typing answers in an answer box, the answers should be typed completely in lowercase, without any spaces, punctuation, special characters or numerals. The only exception to this is when the answer is the numeral greater than 1000 or when the answer is a special character."), _react.default.createElement("li", null, "The questions may also involve interacting with the page itself, following hyperlinks etc."), _react.default.createElement("li", null, "Any attempt to access levels you have not yet reached or any form of attack on the servers will result in disqualification."), _react.default.createElement("li", null, "The organizer\u2019s decision is final in any case.")))), _react.default.createElement("button", {
-        className: "accept-rules",
-        onClick: this.handleAccepted
-      }, "I accept"), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, _react.default.createElement("ol", null, _react.default.createElement("li", null, "Mini Cryptex consists of 6 levels of increasing difficulty. You will receive successive questions upon solving and entering the answer of each level and/or completing the task involved."), _react.default.createElement("li", null, "The winner will be the first person to complete all levels. In case that no one is able to complete Cryptex before the 1800 hours 27th July, the person who occupies the first position on the leaderboard will be declared winner."), _react.default.createElement("li", null, "The competition is open only to freshers."), _react.default.createElement("li", null, "The questions, answers or any discussion related to them must not be posted anywhere. Doing so will result in disqualification. We will provide a platform to communicate with the moderators and ask for hints."), _react.default.createElement("li", null, "If a question involves typing answers in an answer box, the answers should be typed completely in lowercase, without any spaces, punctuation, special characters or numerals. The only exception to this is when the answer is the numeral greater than 1000 or when the answer is a special character."), _react.default.createElement("li", null, "If a question involves typing answers in an answer box, the answers should be typed completely in lowercase, without any spaces, punctuation, special characters or numerals. The only exception to this is when the answer is the numeral greater than 1000 or when the answer is a special character."), _react.default.createElement("li", null, "The questions may also involve interacting with the page itself, following hyperlinks etc."), _react.default.createElement("li", null, "Any attempt to access levels you have not yet reached or any form of attack on the servers will result in disqualification."), _react.default.createElement("li", null, "The organizer\u2019s decision is final in any case.")))), _react.default.createElement("form", {
+        onSubmit: this.handleAccepted
+      }, _react.default.createElement("input", {
+        type: "submit",
+        className: "username-button",
+        value: "I accept"
+      })), _react.default.createElement("br", null), _react.default.createElement("button", {
         onClick: this.logout
       }, "Logout"));
     }
@@ -41333,7 +41355,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39747" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36509" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

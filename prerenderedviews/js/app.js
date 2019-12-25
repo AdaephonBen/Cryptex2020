@@ -6,27 +6,65 @@ import "./../css/index.css"
 import $ from 'jquery';
 import auth0 from 'auth0-js';
 
+import TypeIt from 'typeit';
+
+import {Navbar} from "./components/Navbars" 
+import {NavbarLoggedIn} from "./components/Navbars" 
+
 const AUTH0_CLIENT_ID = "xSWF7EZ8NNiusQpwCeKbh21TGjRR7tIy";
 const AUTH0_DOMAIN = "cryptex2020.auth0.com";
 
 const AUTH0_API_AUDIENCE = "https://cryptex2020.auth0.com/api/v2/";
 
-const globalRootURL = "http://localhost:8080"
+let globalRootURL = "http://"+window.location.host ;
 
 const AUTH0_CALLBACK_URL = globalRootURL ;
 
-export default function Level({ clientID }) {
-	return (
-		<Query query={GET_LEVEL} variables={{ clientID }}>
-			{({ data, loading, error }) => {
-				if (loading) return <Loading />;
-				if (error) return (<p>Error : {error.message} </p>)
-			}}
-		</Query>
-	);
+class TimeLeft extends React.Component {
+	constructor() {
+		super()
+		this.state = {time: "lol"}
+	}
+	componentDidMount() {
+			var today = new Date();
+			this.setState({time: today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()}) ;
+	}
+	render() {
+		return(
+			<div id="clock">
+				<p class="time animated fadeInDown">{this.state.time}</p>
+			</div>
+		)
+	}
 }
 
+class LeftSideBar extends React.Component {
+	componentDidMount() {
+		const instance = new TypeIt('.left-side-bar',{
+			strings: ['Hints for this Question']
+		}).go();
+	}
+	render() {
+		
+		return(
+			<div className="left-side-bar"></div>
+		)
+	}
+}
 
+class RightSideBar extends React.Component {
+	componentDidMount() {
+		const instance = new TypeIt('.right-side-bar',{
+			strings: ['Previous Question']
+		}).go();
+	}
+	render() {
+		
+		return(
+			<div className="right-side-bar"></div>
+		)
+	}
+}
 // <div className="navbar" id="mainNavBar">
 // 	<div className="container">
 // 	<div className="row">
@@ -38,19 +76,7 @@ export default function Level({ clientID }) {
 //   		</div>
 //   		</div>
 // </div>
-class Navbar extends React.Component {
-	render() {
-		return (
-			<nav class="animated fadeInDown">
-				<ul>
-					<a href="/rules"><li>Guidelines</li></a>
-					<a href="/" className="main animated flipInX"><li>C R Y P T E X</li></a>
-					<a href="/leaderboardtable" id="leaderboard-nav-link"><li>Leaderboard</li></a>
-				</ul>
-			</nav>
-		);
-	}
-}
+
 
 class App extends React.Component {
 	parseHash() {
@@ -67,7 +93,6 @@ class App extends React.Component {
 				localStorage.setItem('id_token', authResult.idToken);
 				localStorage.setItem('email', JSON.stringify(authResult.idTokenPayload));
 				window.location = window.location.href.substr(0, window.location.href.indexOf(''))
-
 			}
 		});
 	}
@@ -91,12 +116,7 @@ class App extends React.Component {
 			this.loggedIn = false;
 		}
 	}
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
-	}
+	
 	componentWillMount() {
 		this.setup();
 		this.parseHash();
@@ -104,7 +124,7 @@ class App extends React.Component {
 	}
 	renderBody() {
 		if (this.loggedIn)
-			return (<div> <Navbar /> <LoggedIn /></div>);
+			return (<div> <NavbarLoggedIn /> <LoggedIn /></div>);
 		else
 			return (
 				<div>
@@ -145,29 +165,29 @@ class LoggedIn extends React.Component {
 		if (level) {
 			switch (level) {
 				case "-2":
-					return (<LevelUsername />);
+					return (<div class="flex"><LeftSideBar /><LevelUsername /><RightSideBar /><div class="flex-2"><TimeLeft /></div></div>);
 					break;
 				case "-1":
-					return (<LevelRules />);
+					return (<div><LeftSideBar /><LevelRules /><RightSideBar /><TimeLeft /></div>);
 					break;
 				case "0":
-					return (<LevelImage />);
+					return (<div><LeftSideBar /><LevelImage /><RightSideBar /><TimeLeft /></div>);
 				case "1":
-					return (<LevelImage />);
+					return (<div><LeftSideBar /><LevelImage /><RightSideBar /><TimeLeft /></div>);
 				case "2":
-					return (<LevelText />);
+					return (<div><LeftSideBar /><LevelText /><RightSideBar /><TimeLeft /></div>);
 				case "3":
-					return (<LevelMidi />);
+					return (<div><LeftSideBar /><LevelMidi /><RightSideBar /><TimeLeft /></div>);
 				case "4":
-					return (<LevelImage />);
+					return (<div><LeftSideBar /><LevelImage /><RightSideBar /><TimeLeft /></div>);
 				case "5":
-					return (<LevelImage />);
+					return (<div><LeftSideBar /><LevelImage /><RightSideBar /><TimeLeft /></div>);
 				case "6":
-					return (<LevelImage />);
+					return (<div><LeftSideBar /><LevelImage /><RightSideBar /><TimeLeft /></div>);
 				case "7":
-					return (<LevelImage />);
+					return (<div><LeftSideBar /><LevelImage /><RightSideBar /><TimeLeft /></div>);
 				case "8":
-					return (<LevelWon />);
+					return (<div><LeftSideBar /><LevelWon /><RightSideBar /><TimeLeft /></div>);
 			}
 		}
 		else {
@@ -176,12 +196,6 @@ class LoggedIn extends React.Component {
 	}
 }
 class LevelWon extends React.Component {
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
-	}
 	render() {
 		return (
 			<div className="won congrats">
@@ -199,7 +213,6 @@ class LevelWon extends React.Component {
 				<p class="mobile">
 					Please give us your feedback <a href="https://forms.gle/cXDErCBHFpQva38k7">here</a>. 
 				</p>
-				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
 	}
@@ -211,12 +224,6 @@ class LevelImage extends React.Component {
 		this.state = { value: "", url: "", level: -3 };
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
 	}
 	handleChange(event) {
 		this.setState({ value: event.target.value });
@@ -241,14 +248,16 @@ class LevelImage extends React.Component {
 		return (
 			<div className="level-form won">
 				<br />
-				<img src={this.state.url} class="level-image" />
+				<img src={this.state.url} class="level-image animated fadeIn" />
 				<form onSubmit={this.handleSubmit}>
-					<input type="name" className="answerTextbox" value={this.state.value} onChange={this.handleChange} />
+					<div>
+					<input type="name" className="answerTextbox effect-14" value={this.state.value} onChange={this.handleChange} />
+					<span class="focus-bg"></span>
+					</div>
 					<br /><br />
-					<input type="submit" className="answer-button" value="Submit" />
+					<input type="submit" className="answer-button DiveInButton" value="Submit" />
 				</form>
 				<br />
-				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
 	}
@@ -259,12 +268,6 @@ class LevelText extends React.Component {
 		this.state = { value: "", url: "", level: -3 };
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
 	}
 	handleChange(event) {
 		this.setState({ value: event.target.value });
@@ -313,10 +316,9 @@ class LevelText extends React.Component {
 				<form onSubmit={this.handleSubmit}>
 					<input type="name" className="answerTextbox" value={this.state.value} onChange={this.handleChange} />
 					<br /><br />
-					<input type="submit" className="answer-button" value="Submit" />
+					<input type="submit" className="answer-button DiveInButton" value="Submit" />
 				</form>
 				<br />
-				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
 	}
@@ -328,12 +330,6 @@ class LevelMidi extends React.Component {
 		this.state = { value: "", url: "", level: -3 };
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
 	}
 	handleChange(event) {
 		this.setState({ value: event.target.value });
@@ -364,7 +360,6 @@ class LevelMidi extends React.Component {
 					<input type="submit" className="answer-button" value="Submit" />
 				</form>
 				<br />
-				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
 	}
@@ -376,12 +371,6 @@ class LevelUsername extends React.Component {
 		this.state = { value: "" };
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
 	}
 	handleChange(event) {
 		this.setState({ value: event.target.value });
@@ -413,7 +402,6 @@ class LevelUsername extends React.Component {
 					<input type="submit" className="username-button" value="Submit" />
 				</form>
 				<br />
-				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
 	}
@@ -425,12 +413,6 @@ class LevelRules extends React.Component {
 	constructor(props) {
 		super(props);
 		this.handleAccepted = this.handleAccepted.bind(this);
-	}
-	logout() {
-		localStorage.removeItem('id_token');
-		localStorage.removeItem('access_token');
-		localStorage.removeItem('profile');
-		window.location.reload();
 	}
 	handleAccepted(event) {
 		event.preventDefault();
@@ -496,7 +478,6 @@ class LevelRules extends React.Component {
 					<input type="submit" className="username-button" value="I accept" />
 				</form>
 				<br />
-				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
 	}
